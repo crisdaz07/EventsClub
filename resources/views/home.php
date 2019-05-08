@@ -51,6 +51,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<li>
 							<a href="acerca">NUESTRO EQUIPO</a>
 						</li>
+						<li>
+							<a href="registro">REGISTRO</a>
+						</li>
+						<li>
+							<a href="login">LOGIN</a>
+						</li>
 						<div class="clear"></div>
 					</ul>
 				</div>

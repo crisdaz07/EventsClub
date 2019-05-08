@@ -11,11 +11,19 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('home');
-});
+});*/
 
+Route::get('/', 'rutasController@home');
 Route::get('/home', 'rutasController@home');
+Route::get('/eventos', 'rutasController@eventos');
+Route::get('/blog', 'rutasController@blog');
+Route::get('/galeria', 'rutasController@galeria');
+Route::get('/acerca', 'rutasController@acerca');
+Route::get('/contacto', 'rutasController@contacto');
+Route::get('/registro', 'rutasController@registro');
+Route::get('/login', 'rutasController@login');
 
 
 
