@@ -13,13 +13,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="css/slider.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="../css/slider.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
-	<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
-	<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+	<script type="text/javascript" src="../js/jquery-1.9.0.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.nivo.slider.js"></script>
 	<script type="text/javascript">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
@@ -131,32 +131,32 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="header_top">
 			<div class="wrap">
 				<div class="logo">
-					<a href="index.html">
-						<img src="images/logo.png" alt="" />
+					<a href="../index.html">
+						<img src="../images/logo.png" alt="" />
 					</a>
 				</div>
 				<div class="menu">
 					<ul>
 						<li class="active">
-							<a href="home">INICIO</a>
+							<a href="../">INICIO</a>
 						</li>
 						<li>
-							<a href="eventos">EVENTOS</a>
+							<a href="../eventos">EVENTOS</a>
 						</li>
 						<li>
-							<a href="galeria">GALLERIA</a>
+							<a href="../galeria">GALLERIA</a>
 						</li>
 						<li>
-							<a href="blog">BLOG</a>
+							<a href="../blog">BLOG</a>
 						</li>
 						<li>
-							<a href="contacto">CONTACTO</a>
+							<a href="../contacto">CONTACTO</a>
 						</li>
 						<li>
-							<a href="acerca">NUESTRO EQUIPO</a>
+							<a href="../acerca">NUESTRO EQUIPO</a>
 						</li>
 						<li>
-							<a href="registro">REGISTRO</a>
+							<a href="../register">REGISTRO</a>
 						</li>
 						<div class="clear"></div>
 					</ul>
@@ -166,7 +166,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 		<!------ Slider ------------>
 		<div class="signup-form"  >
-			<form action="../registro_control.php" method="post">
+			<form action="../../registro_control.php" method="post">
 				<h2>Register</h2>
 				<p class="hint-text">Create your account. It's free and only takes a minute.</p>
 				<div class="form-group">
@@ -218,7 +218,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</li>
 				</ul>-->
 				<div class="footer-pic">
-					<img src="images/f-icon.png" alt="">
+					<img src="../images/f-icon.png" alt="">
 				</div>
 				<div class="clear"></div>
 			</div>
@@ -242,7 +242,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</li>
 				</ul>-->
 				<div class="footer-pic">
-					<img src="images/foot-icon.png" alt="">
+					<img src="../images/foot-icon.png" alt="">
 				</div>
 			</div>
 			<div class="clear"></div>

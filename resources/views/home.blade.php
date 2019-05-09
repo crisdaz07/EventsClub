@@ -52,11 +52,25 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<a href="acerca">NUESTRO EQUIPO</a>
 						</li>
 						<li>
-							<a href="registro">REGISTRO</a>
-						</li>
-						<li>
-							<a href="login">LOGIN</a>
-						</li>
+							@if (Route::has('login'))
+								<div class="top-right links">
+									@auth
+									<li>
+										<a href="{{ url('/home') }}">Home</a>
+									</li>
+									@else
+									<li>
+										<a href="{{ route('login') }}">LOGIN</a>
+									</li>
+										@if (Route::has('register'))
+									<li>
+											<a href="{{ route('register') }}">REGISTER</a>
+									</li>
+										@endif
+									@endauth
+								</div>
+							@endif
+        				</li>
 						<div class="clear"></div>
 					</ul>
 				</div>

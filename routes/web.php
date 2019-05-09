@@ -22,7 +22,7 @@ Route::get('/blog', 'rutasController@blog');
 Route::get('/galeria', 'rutasController@galeria');
 Route::get('/acerca', 'rutasController@acerca');
 Route::get('/contacto', 'rutasController@contacto');
-Route::get('/registro', 'rutasController@registro');
+Route::get('/register', 'rutasController@registro');
 Route::get('/login', 'rutasController@login');
 
 
@@ -51,3 +51,6 @@ Route::get('/contacto', function () {
     return view('contact');
 });
 */
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

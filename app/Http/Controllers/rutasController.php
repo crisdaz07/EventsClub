@@ -41,7 +41,7 @@ class rutasController extends Controller{
 	
 	public function registro(){
 		
-		return view('registro');
+		return view('register');
 		
 	}
 	public function login(){
