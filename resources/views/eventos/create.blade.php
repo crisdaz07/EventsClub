@@ -177,12 +177,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 				</div> 
 				<div class="form-group">
+					<a1>
+						Inicio
+					</a>
 					<div class="row">
-						<div class="col-xs-6"><input type="date" class="form-control" name="fechai" placeholder="Fecha de inicio" required="required"></div>
+						<div class="col-xs-6">
+							<input type="date" class="form-control" name="fechai" placeholder="Fecha de inicio" required="required">
+						</div>
 						<div class="col-xs-6"><input type="time" class="form-control" name="horai" placeholder="Hora de fin" required="required"></div>
 					</div>
 				</div>
 				<div class="form-group">
+					<a1>
+						Fin
+					</a>
 					<div class="row">
 						<div class="col-xs-6"><input type="date" class="form-control" name="fechaf" placeholder="Fecha de inicio" required="required"></div>
 						<div class="col-xs-6"><input type="time" class="form-control" name="horaf" placeholder="Hora de fin" required="required"></div>
