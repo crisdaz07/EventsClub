@@ -168,8 +168,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!------ Slider ------------>
 		<div class="signup-form"  >
 			<form action="../../registro_control.php" method="post">
-				<h2>Register</h2>
-				<p class="hint-text">Create your account. It's free and only takes a minute.</p>
+				<h2>Evento</h2>
+				<p class="hint-text">Crea tu evento.</p>
 				<div class="form-group">
 					<div class="row">
 						<div class="col-xs-6"><input type="text" class="form-control" name="nombre" placeholder="Nombre" required="required"></div>
@@ -197,10 +197,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 				</div>
 				<div class="form-group">
-					<button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
+					<button type="submit" class="btn btn-success btn-lg btn-block">Crear</button>
 				</div>
 			</form>
-			<div class="text-center">Already have an account? <a href="#">Sign in</a></div>
 		</div>
 		<!------End Slider ------------>
 	</div>
