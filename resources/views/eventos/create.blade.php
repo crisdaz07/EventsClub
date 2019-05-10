@@ -46,7 +46,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		width: 400px;
 		margin: 0 auto;
 		padding: 30px 0;
-		margin-top: 0px;
+		margin-top: -30px;
 	}
 	.signup-form h2{
 		color: #610B4B;
