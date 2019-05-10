@@ -1,11 +1,28 @@
 <?php
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Controller;
+use Illuminate\Foundation\Auth\AuthenticatesUsers;
+
 class rutasController extends Controller{
 	
-	public function home(){
+
+    /**
+     * Where to redirect users after login.
+     *
+     * @var string
+     */
+
+
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
 	
-		return view('home');
+	public function index(){
+		
+		return view('welcome');
 		
 	}
 	
@@ -52,13 +69,5 @@ class rutasController extends Controller{
 	
 	
 }
-
-
-
-
-
-
-
-
 
 ?>
