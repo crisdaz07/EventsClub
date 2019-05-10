@@ -35,6 +35,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     .form-control{
 		height: 40px;
 		box-shadow: none;
+		color: #FFFF00;
 	}
 	.form-control:focus{
 		border-color: #5cb85c;
@@ -75,6 +76,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		text-align: center;
 	}
     .signup-form form{
+		color: #FFF000;
 		border-radius: 3px;
     	margin-bottom: 15px;
         background: #f2f3f7;
@@ -109,20 +111,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		text-decoration: none;
 	}
 	.signup-form form a{
+		color: #FFF000;
 		text-decoration: none;
 	}	
 	.signup-form form a:hover{
 		text-decoration: underline;
 	}
-		
-	textarea{
-		width: 340px;
-		height: 300px;
-	}
 			
 	SELECT{
 		width: 160px;
 	    height: 300;
+		
 	}
 </style>
 </head>
@@ -172,30 +171,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<p class="hint-text">Create your account. It's free and only takes a minute.</p>
 				<div class="form-group">
 					<div class="row">
-						<div class="col-xs-6"><input type="text" class="form-control" name="nombre" placeholder="Nombre" required="required"></div>
-						<div class="col-xs-6"><input type="text" class="form-control" name="ubicacion" placeholder="Ubicacion" required="required"></div>
-					</div>
-				</div> 
-				<div class="form-group">
-					<div class="row">
-						<div class="col-xs-6"><input type="date" class="form-control" name="fechai" placeholder="Fecha de inicio" required="required"></div>
-						<div class="col-xs-6"><input type="time" class="form-control" name="horai" placeholder="Hora de fin" required="required"></div>
-					</div>
+						<div class="col-xs-6"><input type="text" class="form-control" name="first_name" placeholder="First Name" required="required"></div>
+						<div class="col-xs-6"><input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required"></div>
+					</div>        	
 				</div>
 				<div class="form-group">
-					<div class="row">
-						<div class="col-xs-6"><input type="date" class="form-control" name="fechaf" placeholder="Fecha de inicio" required="required"></div>
-						<div class="col-xs-6"><input type="time" class="form-control" name="horaf" placeholder="Hora de fin" required="required"></div>
-					</div>
+					<input type="email" class="form-control" name="email" placeholder="Email" required="required">
 				</div>
 				<div class="form-group">
-					<div class="row">
-						<div class="form-group">
-             				<textarea name="descripcion" placeholder="Descripcion." required>
-							</textarea>
-       					 </div>
-					</div>
+					<input type="password" class="form-control" name="password" placeholder="Password" required="required">
 				</div>
+				<div class="form-group">
+					<input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
+				</div>        
 				<div class="form-group">
 					<button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
 				</div>
