@@ -167,7 +167,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 		<!------ Slider ------------>
 		<div class="signup-form"  >
-			<form action="" method="post">
+			<form action="/evento" method="post">
+				<input name="_token" type="hidden" value="{{ csrf_token() }}"/>
+				<input name="_method" type="hidden" value="{{ 'post' }}"/>
+				{{ csrf_field() }}
 				<h2>Evento</h2>
 				<p class="hint-text">Crea tu evento.</p>
 				<div class="form-group">
@@ -182,9 +185,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</a>
 					<div class="row">
 						<div class="col-xs-6">
-							<input type="date" class="form-control" name="fechai" placeholder="Fecha de inicio" required="required">
+							<input type="date" class="form-control" name="fecha_inicio" placeholder="Fecha de inicio" required="required">
 						</div>
-						<div class="col-xs-6"><input type="time" class="form-control" name="horai" placeholder="Hora de fin" required="required"></div>
+						<div class="col-xs-6"><input type="time" class="form-control" name="hora_inicio" placeholder="Hora de fin" required="required"></div>
 					</div>
 				</div>
 				<div class="form-group">
@@ -192,8 +195,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						Fin
 					</a>
 					<div class="row">
-						<div class="col-xs-6"><input type="date" class="form-control" name="fechaf" placeholder="Fecha de inicio" required="required"></div>
-						<div class="col-xs-6"><input type="time" class="form-control" name="horaf" placeholder="Hora de fin" required="required"></div>
+						<div class="col-xs-6"><input type="date" class="form-control" name="fecha_fin" placeholder="Fecha de inicio" required="required"></div>
+						<div class="col-xs-6"><input type="time" class="form-control" name="hora_fin" placeholder="Hora de fin" required="required"></div>
 					</div>
 				</div>
 				<div class="form-group">

@@ -36,16 +36,18 @@ class EventoController extends Controller
     public function store(Request $request)
     {
         $evento = new Evento;
-        $evento->id_usuario = $request->id_usuario;
-        $evento->id_categoria = $request->id_categoria;
+        $evento->id_usuario = 44;
+        $evento->id_categoria = 44;
         $evento->nombre = $request->nombre;
         $evento->descripcion = $request->descripcion;
         $evento->ubicacion = $request->ubicacion;
         $evento->fecha_inicio = $request->fecha_inicio;
         $evento->fecha_fin = $request->fecha_fin;
-        $evento->hora = $request->hora;
+        $evento->hora_inicio = $request->hora_inicio;
+        $evento->hora_fin = $request->hora_fin;
 
         $evento->save();
+        echo "event created";
     }
 
     /**
