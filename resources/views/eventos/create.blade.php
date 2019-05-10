@@ -167,7 +167,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 		<!------ Slider ------------>
 		<div class="signup-form"  >
-			<form action="../../registro_control.php" method="post">
+			<form action="" method="post">
 				<h2>Evento</h2>
 				<p class="hint-text">Crea tu evento.</p>
 				<div class="form-group">
