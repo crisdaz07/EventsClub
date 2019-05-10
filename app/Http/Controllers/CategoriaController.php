@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Evento;
+use App\Categoria;
 
-class EventoController extends Controller
+class CategoriaController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class EventoController extends Controller
      */
     public function index()
     {
-       echo "hola mundo";
+        echo "hola mundo desde la categoria";
     }
 
     /**
@@ -24,7 +24,7 @@ class EventoController extends Controller
      */
     public function create()
     {
-        return view('eventos.create');
+       return view('categorias.create');
     }
 
     /**
@@ -35,17 +35,11 @@ class EventoController extends Controller
      */
     public function store(Request $request)
     {
-        $evento = new Evento;
-        $evento->id_usuario = $request->id_usuario;
-        $evento->id_categoria = $request->id_categoria;
-        $evento->nombre = $request->nombre;
-        $evento->descripcion = $request->descripcion;
-        $evento->ubicacion = $request->ubicacion;
-        $evento->fecha_inicio = $request->fecha_inicio;
-        $evento->fecha_fin = $request->fecha_fin;
-        $evento->hora = $request->hora;
+        $categoria = new Categoria;
+        $categoria->nombre = $request->nombre;
+        $categoria->descripcion = $request->descripcion;
 
-        $evento->save();
+        $categoria->save();
     }
 
     /**
