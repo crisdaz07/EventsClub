@@ -22,7 +22,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<script type="text/javascript" src="../js/jquery.nivo.slider.js"></script>
 	<script type="text/javascript">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		$(window).load(function () {
 			$('#slider').nivoSlider();
 		});
@@ -39,7 +39,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	.form-control:focus{
 		border-color: #5cb85c;
 	}
-    .form-control, .btn{        
+    .form-control, .btn{
         border-radius: 3px;
     }
 	.signup-form{
@@ -62,7 +62,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		position: absolute;
 		top: 50%;
 		z-index: 2;
-	}	
+	}
 	.signup-form h2:before{
 		left: 0;
 	}
@@ -87,9 +87,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	.signup-form input[type="checkbox"]{
 		margin-top: 3px;
 	}
-	.signup-form .btn{        
+	.signup-form .btn{
         font-size: 16px;
-        font-weight: bold;		
+        font-weight: bold;
 		min-width: 140px;
         outline: none !important;
 		color: #ffffff;
@@ -100,7 +100,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	}
 	.signup-form .row div:last-child{
 		padding-left: 10px;
-	}    	
+	}
     .signup-form a{
 		color: #FFFFFF;
 		text-decoration: underline;
@@ -110,16 +110,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	}
 	.signup-form form a{
 		text-decoration: none;
-	}	
+	}
 	.signup-form form a:hover{
 		text-decoration: underline;
 	}
-		
+
 	textarea{
 		width: 340px;
 		height: 300px;
 	}
-			
+
 	SELECT{
 		width: 160px;
 	    height: 300;
@@ -167,7 +167,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 		<!------ Slider ------------>
 		<div class="signup-form"  >
-			<form action="/evento" method="post">
+			<form action="" method="post">
 				<h2>Evento</h2>
 				<p class="hint-text">Crea tu evento.</p>
 				<div class="form-group">
@@ -175,7 +175,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="col-xs-6"><input type="text" class="form-control" name="nombre" placeholder="Nombre" required="required"></div>
 						<div class="col-xs-6"><input type="text" class="form-control" name="ubicacion" placeholder="Ubicacion" required="required"></div>
 					</div>
-				</div> 
+				</div>
 				<div class="form-group">
 					<a1>
 						Inicio
@@ -212,9 +212,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!------End Slider ------------>
 	</div>
 	<div class="main">
-		
+
 	</div>
-		
+
 	<div class="footer">
 		<div class="wrap">
 			<div class="half-footer" style="margin-left:0">
