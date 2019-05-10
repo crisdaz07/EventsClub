@@ -7,4 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 class Evento extends Model
 {
     public $timestamps = false;
+
+
+    public static function eventos($id_categoria){
+    	return Evento::where('id_categoria','=',$id_categoria)->get();
+    }
+
 }

@@ -7,6 +7,7 @@
 	<form method="POST" action="/categoria">
 		{{csrf_field()}}
 		<input type="text" name="descripcion">
+		<input type="text" name="nombre">
 
 		<input name="_token" type="hidden" value="{{ csrf_token() }}"/>
 		<input name="_method" type="hidden" value="{{ 'post' }}"/>

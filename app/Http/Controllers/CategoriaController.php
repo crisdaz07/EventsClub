@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Categoria;
+use App\Evento;
 
 class CategoriaController extends Controller
 {
@@ -48,9 +49,16 @@ class CategoriaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($nombre)
     {
-        //
+        $categoria = Categoria::where('nombre','=',$nombre)->get();
+
+        $id_categoria = Categoria::select('id')->where('nombre','=',$nombre)->value('id');       
+        echo "esta es la categoria". $id_categoria;
+        $evento = Evento::eventos($id_categoria);
+
+        return $evento;
+
     }
 
     /**

@@ -37,7 +37,7 @@ class EventoController extends Controller
     {
         $evento = new Evento;
         $evento->id_usuario = 44;
-        $evento->id_categoria = 44;
+        $evento->id_categoria = 2;
         $evento->nombre = $request->nombre;
         $evento->descripcion = $request->descripcion;
         $evento->ubicacion = $request->ubicacion;
