@@ -61,7 +61,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<a href="galeria">GALLERIA</a>
 						</li>
 						<li>
-							<a href="blogl">BLOG</a>
+							<a href="blog">BLOG</a>
 						</li>
 						<li>
 							<a href="contacto">CONTACTO</a>
