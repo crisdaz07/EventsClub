@@ -15,8 +15,9 @@
     return view('home');
 });*/
 
-Route::get('/', 'rutasController@home');
-Route::get('/home', 'rutasController@home');
+Route::get('/', 'rutasController@index');
+Route::get('/welcome', 'rutasController@index');
+
 Route::get('/eventos', 'rutasController@eventos');
 Route::get('/blog', 'rutasController@blog');
 Route::get('/galeria', 'rutasController@galeria');
@@ -54,3 +55,7 @@ Route::get('/contacto', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+
