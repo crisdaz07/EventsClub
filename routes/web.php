@@ -26,7 +26,7 @@ Route::get('/contacto', 'rutasController@contacto');
 Route::get('/register', 'rutasController@registro');
 Route::get('/login', 'rutasController@login');
 
-
+Route::resource('evento', 'EventoController' );
 
 /*Route::get('/home', function () {
     return view('home');
