@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use App\Evento;
+use App\Categoria;
 class rutasController extends Controller{
 	
 
@@ -24,13 +25,15 @@ class rutasController extends Controller{
 
 		$eventos = Evento::all();  //todos los eventos para mostrar unos cuantos
 		
-		return view('welcome');
+		return view('welcome', compact('eventos'));
 		
 	}
 	
 	public function eventos(){
 		
-		return view('events');
+		$categorias = Categoria::all();  //todos las cateogiras para events
+
+		return view('events', compact('categorias'));
 		
 	}
 	

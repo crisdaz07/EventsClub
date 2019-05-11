@@ -123,6 +123,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<figure>
 									<span>PROXIMO</span>EVENTO</figure>
 							</div>
+							
 						</div>
 					</a>
 				</div>

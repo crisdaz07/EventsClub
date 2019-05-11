@@ -57,19 +57,13 @@ class CategoriaController extends Controller
         $eventos = Evento::eventos($id_categoria);
 
         //return redirect('categoriavista')->with(compact('evento'));
-        //return view('categoria',)
+        return view('categoriavista', compact('eventos'));
         //app('App\Http\Controllers\CategoriaController')->categoriavista($eventos);
 
 
     }
 
-    public function categoriavista($eventos)
-    {
-        return view('categorias.vistaCategoria', compact('eventos'));
-
-    }
-
-
+    
     /**
      * Show the form for editing the specified resource.
      *
