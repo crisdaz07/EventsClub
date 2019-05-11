@@ -53,6 +53,8 @@ class CategoriaController extends Controller
         $id_categoria = Categoria::getCategoria($nombre);
         echo "esta es la categoria". $id_categoria;
         $eventos = Evento::eventos($id_categoria);
+		
+	
 
         //return redirect('categoriavista')->with(compact('evento'));
         //return view('categoria',)
