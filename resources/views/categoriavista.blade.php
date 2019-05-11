@@ -3,9 +3,9 @@
 <head>
 	<title>
 		@foreach($evento as $item) 
-			<?php 
-				echo $item;
-			?>
+			 
+				<p>This is user {{ $item::all() }}</p>
+			
 		@endforeach
 	</title>
 </head>
