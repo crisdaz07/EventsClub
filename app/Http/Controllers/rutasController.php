@@ -3,7 +3,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
-
+use App\Evento;
 class rutasController extends Controller{
 	
 
@@ -21,6 +21,8 @@ class rutasController extends Controller{
      */
 	
 	public function index(){
+
+		$eventos = Evento::all();  //todos los eventos para mostrar unos cuantos
 		
 		return view('welcome');
 		

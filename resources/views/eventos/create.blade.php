@@ -201,6 +201,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 				<div class="form-group">
 					<div class="row">
+						<input type="text" class="form-control" name="categoria" placeholder="Categoria" required="required">						
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="row">
 						<div class="form-group">
              				<textarea name="descripcion" placeholder="Descripcion." required>
 							</textarea>

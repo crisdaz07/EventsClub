@@ -51,9 +51,8 @@ class CategoriaController extends Controller
      */
     public function show($nombre)
     {
-        $categoria = Categoria::where('nombre','=',$nombre)->get();
 
-        $id_categoria = Categoria::select('id')->where('nombre','=',$nombre)->value('id');       
+        $id_categoria = Categoria::getCategoria($nombre);
         echo "esta es la categoria". $id_categoria;
         $evento = Evento::eventos($id_categoria);
 

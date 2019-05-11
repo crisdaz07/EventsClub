@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Evento;
+use App\Categoria;
 
 class EventoController extends Controller
 {
@@ -14,7 +15,7 @@ class EventoController extends Controller
      */
     public function index()
     {
-       echo "hola mundo";
+       return view('events');
     }
 
     /**
@@ -37,7 +38,7 @@ class EventoController extends Controller
     {
         $evento = new Evento;
         $evento->id_usuario = 44;
-        $evento->id_categoria = 2;
+        $evento->id_categoria = Categoria::getCategoria($request->categoria);
         $evento->nombre = $request->nombre;
         $evento->descripcion = $request->descripcion;
         $evento->ubicacion = $request->ubicacion;
@@ -47,7 +48,8 @@ class EventoController extends Controller
         $evento->hora_fin = $request->hora_fin;
 
         $evento->save();
-        echo "event created";
+
+        return redirect('eventos');
     }
 
     /**
