@@ -15,7 +15,9 @@ class EventoController extends Controller
      */
     public function index()
     {
-       return view('categorias');
+       $categorias = Categoria::all();
+       $eventos = Evento::all();
+       return view('categorias', compact('categorias','eventos'));
     }
 
     /**
@@ -49,7 +51,7 @@ class EventoController extends Controller
 
         $evento->save();
 
-        return redirect('eventos');
+        return redirect('categorias');
     }
 
     /**
