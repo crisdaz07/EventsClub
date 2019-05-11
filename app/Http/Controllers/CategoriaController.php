@@ -56,7 +56,7 @@ class CategoriaController extends Controller
         echo "esta es la categoria". $id_categoria;
         $evento = Evento::eventos($id_categoria);
 
-        return $evento;
+        echo $evento;
 
     }
 
