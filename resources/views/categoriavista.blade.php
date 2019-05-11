@@ -40,6 +40,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			color: #ffffff;
 			font-weight: bold;
 		}
+		.content_top h3{
+			color: #ffffff;
+			font-size: 100px;
+			
+		}
 	
 	</style>
 </head>
@@ -113,6 +118,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="main">
 		<div class="wrap">
 			<div class="content_top">
+					<h3 align="center">{{ $nombre }}</h2>
 				<div class="events">
 					@foreach($ubicaciones as $u) 
 					    <a href=""> <h2>{{ $u->ubicacion }}</h2> </a>
