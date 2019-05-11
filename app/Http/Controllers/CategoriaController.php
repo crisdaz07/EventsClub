@@ -39,7 +39,6 @@ class CategoriaController extends Controller
         $categoria = new Categoria;
         $categoria->nombre = $request->nombre;
         $categoria->descripcion = $request->descripcion;
-
         $categoria->save();
     }
 
@@ -51,7 +50,6 @@ class CategoriaController extends Controller
      */
     public function show($nombre)
     {
-
         $id_categoria = Categoria::getCategoria($nombre);
         echo "esta es la categoria". $id_categoria;
         $evento = Evento::eventos($id_categoria);
