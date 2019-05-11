@@ -110,17 +110,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="wrap">
 			<div class="content_top">
 				<div class="events">
-					@foreach($eventos as $e) 
-					    <a href=""> <h2>{{ $e->ubicacion }}</h2> </a>
+					@foreach($ubicaciones as $u) 
+					    <a href=""> <h2>{{ $u->ubicacion }}</h2> </a>
 						<div class="section group">
-					    @foreach($eventos as $ev) 
-							@if( $e->ubicacion ==  $ev->ubicacion )
+					    @foreach($eventos as $e) 
+							@if( $e->ubicacion ==  $u->ubicacion )
 						 		<div class="grid_1_of_3 events_1_of_3">
 									<div class="event-time">
 										<h4>
-											<span> {{ $ev->nombre }}</span>
+											<span> {{ $e->nombre }}</span>
 										</h4>
-										<h4>{{ $ev->fecha_inicio }}</h4>
+										<h4>{{ $e->fecha_inicio }}</h4>
 									</div>
 									<div class="event-img">
 										<a href="blog.html">
