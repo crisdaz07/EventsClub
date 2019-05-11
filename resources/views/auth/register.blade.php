@@ -108,13 +108,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	.signup-form input[type="checkbox"]{
 		margin-top: 3px;
 	}
-	.signup-form .btn{        
+	.btn{        
         font-size: 16px;
         font-weight: bold;		
 		min-width: 140px;
         outline: none !important;
 		color: #ffffff;
-		background: #610B4B
+		background: #610B4B;
     }
 	.signup-form .row div:first-child{
 		padding-right: 10px;
@@ -137,9 +137,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		text-decoration: underline;
 	}
 	
-		.footer{
-			margin-top: 100px;
-		}
+	.footer{
+		margin-top: 100px;
+	}
 			
 	SELECT{
 		width: 160px;
@@ -160,8 +160,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 				<div class="menu">
 					<ul>
-						<li class="active">
-							<a href="../">INICIO</a>
+						<li>
+							<a href="../welcome">INICIO</a>
 						</li>
 						<li>
 							<a href="../categorias">CATEGORIAS</a>
@@ -179,8 +179,25 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<a href="../acerca">NUESTRO EQUIPO</a>
 						</li>
 						<li>
-							<a href="../register">REGISTRO</a>
-						</li>
+							@if (Route::has('login'))
+								<div class="top-right links">
+									@auth
+									<li>
+										<a href="{{ url('/home') }}">Home</a>
+									</li>
+									@else
+									<li>
+										<a href="{{ route('login') }}">LOGIN</a>
+									</li>
+										@if (Route::has('register'))
+									<li class="active">
+											<a href="{{ route('register') }}">REGISTRO</a>
+									</li>
+										@endif
+									@endauth
+								</div>
+							@endif
+        				</li>
 						<div class="clear"></div>
 					</ul>
 				</div>
@@ -192,7 +209,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+                <div class="card-header"><strong > {{ __('Registrate aqui.') }} </strong></div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
@@ -265,7 +282,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
+                                    {{ __('Registrar') }}
                                 </button>
                             </div>
                         </div>
@@ -284,7 +301,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="footer">
 		<div class="wrap">
 			<div class="half-footer" style="margin-left:0">
-				<!--<ul class="feeds">
+				<ul class="feeds">
 					<h3>Our Latest feeds</h3>
 					<li>
 						<a href="index.html">Lorem ipsum dolor consectetur adiping</a>
@@ -301,14 +318,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<li>
 						<a href="contact.html">Nullam imperdiet vulputate congugue</a>
 					</li>
-				</ul>-->
+				</ul>
 				<div class="footer-pic">
 					<img src="../images/f-icon.png" alt="">
 				</div>
 				<div class="clear"></div>
 			</div>
 			<div class="half-footer" style="border:none">
-				<!--<ul class="adress">
+				<ul class="adress">
 					<h3>Catch on</h3>
 					<li>
 						<a href="index.html">Events Club</a>
@@ -325,7 +342,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<li>
 						<a href="mailto:example@mail.com">yourname(at)companyname.com</a>
 					</li>
-				</ul>-->
+				</ul>
 				<div class="footer-pic">
 					<img src="../images/foot-icon.png" alt="">
 				</div>

@@ -138,8 +138,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 				<div class="menu">
 					<ul>
-						<li class="active">
-							<a href="../home">INICIO</a>
+						<li>
+							<a href="../welcome">INICIO</a>
 						</li>
 						<li>
 							<a href="../categorias">CATEGORIAS</a>
@@ -201,7 +201,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 				<div class="form-group">
 					<div class="row">
-						<input type="text" class="form-control" name="categoria" placeholder="Categoria" required="required">						
+						<div class="form-group">
+             				<input type="text" class="form-control" name="categoria" placeholder="Categoria" required="required">
+       					 </div>										
 					</div>
 				</div>
 				<div class="form-group">
@@ -226,7 +228,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="footer">
 		<div class="wrap">
 			<div class="half-footer" style="margin-left:0">
-				<!--<ul class="feeds">
+				<ul class="feeds">
 					<h3>Our Latest feeds</h3>
 					<li>
 						<a href="index.html">Lorem ipsum dolor consectetur adiping</a>
@@ -243,14 +245,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<li>
 						<a href="contact.html">Nullam imperdiet vulputate congugue</a>
 					</li>
-				</ul>-->
+				</ul>
 				<div class="footer-pic">
 					<img src="../images/f-icon.png" alt="">
 				</div>
 				<div class="clear"></div>
 			</div>
 			<div class="half-footer" style="border:none">
-				<!--<ul class="adress">
+				<ul class="adress">
 					<h3>Catch on</h3>
 					<li>
 						<a href="index.html">Events Club</a>
@@ -267,7 +269,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<li>
 						<a href="mailto:example@mail.com">yourname(at)companyname.com</a>
 					</li>
-				</ul>-->
+				</ul>
 				<div class="footer-pic">
 					<img src="../images/foot-icon.png" alt="">
 				</div>
