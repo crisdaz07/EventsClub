@@ -17,7 +17,7 @@
 
 Route::get('/', 'rutasController@index');
 Route::get('/welcome', 'rutasController@index');
-Route::get('/eventos', 'rutasController@eventos');
+Route::get('/categorias', 'rutasController@categorias');
 Route::get('/blog', 'rutasController@blog');
 Route::get('/galeria', 'rutasController@galeria');
 Route::get('/acerca', 'rutasController@acerca');

@@ -29,13 +29,13 @@ class rutasController extends Controller{
 		
 	}
 	
-	public function eventos(){
+	public function categorias(){
 		
 		$eventos = Evento::all();
 		
 		$categorias = Categoria::all();  //todos las cateogiras para events
 
-		return view('events', compact('categorias','eventos'));
+		return view('categorias', compact('categorias','eventos'));
 		
 	}
 	

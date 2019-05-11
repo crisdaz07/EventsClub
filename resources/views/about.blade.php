@@ -55,7 +55,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<a href="home">INICIO</a>
 						</li>
 						<li>
-							<a href="eventos">EVENTOS</a>
+							<a href="categorias">CATEGORIAS</a>
 						</li>
 						<li>
 							<a href="galeria">GALLERIA</a>

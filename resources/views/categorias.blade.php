@@ -55,7 +55,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<a href="home">INICIO</a>
 						</li>
 						<li class="active">
-							<a href="eventos">EVENTOS</a>
+							<a href="categorias">CATEGORIAS</a>
 						</li>
 						<li>
 							<a href="galeria">GALLERIA</a>
@@ -112,26 +112,26 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="events">
 					@foreach($categorias as $c) 
 						<h2>{{ $c->nombre }}</h2>
+						<div class="section group">
 					    @foreach($eventos as $e) 
 							@if( $c->id ==  $e->id_categoria )
-					        	<div class="section group">
-									<div class="grid_1_of_3 events_1_of_3">
-										<div class="event-time">
-											<h4>
-												<span> {{ $e->nombre }}</span>
-											</h4>
-											<h4>{{ $e->fecha_inicio }}</h4>
-										</div>
-										<div class="event-img">
-											<a href="blog.html">
-												<img src="images/Inicio/Rumba2.png" alt="">
-												<span>Leer Más</span>
-											</a>
-										</div>
+						 		<div class="grid_1_of_3 events_1_of_3">
+									<div class="event-time">
+										<h4>
+											<span> {{ $e->nombre }}</span>
+										</h4>
+										<h4>{{ $e->fecha_inicio }}</h4>
 									</div>
+									<div class="event-img">
+										<a href="blog.html">
+											<img src="images/Inicio/Rumba2.png" alt="">
+											<span>Leer Más</span>
+										</a>
+								    </div>
 								</div>
-							@endif		
+							@endif
 						@endforeach
+						</div>
 					@endforeach
 				</div>
 			</div>
