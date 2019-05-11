@@ -55,7 +55,7 @@ class CategoriaController extends Controller
 
         //return $eventos->all();
        
-        return view('categoriavista', compact('eventos'));
+        return view('categoriavista', compact('eventos','nombre'));
 
 
     }

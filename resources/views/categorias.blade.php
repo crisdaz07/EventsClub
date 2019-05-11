@@ -111,7 +111,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="content_top">
 				<div class="events">
 					@foreach($categorias as $c) 
-						<h2>{{ $c->nombre }}</h2>
+					    <a href="/categoria/{{ $c->nombre }}"> <h2>{{ $c->nombre }}</h2> </a>
 						<div class="section group">
 					    @foreach($eventos as $e) 
 							@if( $c->id ==  $e->id_categoria )
