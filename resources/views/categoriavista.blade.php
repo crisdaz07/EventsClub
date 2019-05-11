@@ -2,14 +2,16 @@
 <html>
 <head>
 	<title>
-		@foreach($evento as $item) 
-			 
-				<p>This is user {{ $item::all() }}</p>
-			
-		@endforeach
+		
 	</title>
 </head>
 <body>
+	@foreach($eventos as $item) 
+		
+		<p>This is user {{!! $item->nombre !!}}</p>
+		<p>index {{!! $loop->index !!}}</p>
+	@endforeach
 
+	
 </body>
 </html>
