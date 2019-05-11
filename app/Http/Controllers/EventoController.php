@@ -15,9 +15,10 @@ class EventoController extends Controller
      */
     public function index()
     {
-       $categorias = Categoria::all();
-       $eventos = Evento::all();
-       return view('categorias', compact('categorias','eventos'));
+       //$categorias = Categoria::all();
+       //$eventos = Evento::all();
+       //return view('categorias', compact('categorias','eventos'));
+        return "seems like you're lost";
     }
 
     /**
