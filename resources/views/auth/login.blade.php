@@ -81,13 +81,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         font-size: 15px;
         font-weight: bold;
 		background: #610B4B;
+		color: #ffffff;
     }
+	.btn1 {
+		color: #000000;
+		font-weight: bold;
+	}
 	.checkbox-inline{
-			color: #610B4B;
+		color: #610B4B;
 	}
 		
-		.footer{
-			margin-top: 200	}
+	.footer{
+		margin-top: 200px;
+	}
 </style>
 	
 </head>
@@ -103,8 +109,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 				<div class="menu">
 					<ul>
-						<li class="active">
-							<a href="../">INICIO</a>
+						<li>
+							<a href="../welcome">INICIO</a>
 						</li>
 						<li>
 							<a href="../categorias">CATEGORIAS</a>
@@ -122,8 +128,25 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<a href="../acerca">NUESTRO EQUIPO</a>
 						</li>
 						<li>
-							<a href="../register">REGISTRO</a>
-						</li>
+							@if (Route::has('login'))
+								<div class="top-right links">
+									@auth
+									<li>
+										<a href="{{ url('/home') }}">Home</a>
+									</li>
+									@else
+									<li class="active">
+										<a href="{{ route('login') }}">LOGIN</a>
+									</li>
+										@if (Route::has('register'))
+									<li>
+											<a href="{{ route('register') }}">REGISTRO</a>
+									</li>
+										@endif
+									@endauth
+								</div>
+							@endif
+        				</li>
 						<div class="clear"></div>
 					</ul>
 				</div>
@@ -136,8 +159,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="row justify-content-center">
 				<div class="col-md-8">
 					<div class="card">
-						<div class="card-header">{{ __('Login') }}</div>
-
+						<div class="card-header"><strong > {{ __('Inicia sesion aqui.') }}</strong> </div>
 						<div class="card-body">
 							<form method="POST" action="{{ route('login') }}">
 								@csrf
@@ -145,8 +167,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<div class="form-group row">
 									<label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
-									<div class="col-md-6">
-										<input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+									<div class="col-md-6">										<input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
 										@error('email')
 											<span class="invalid-feedback" role="alert">
@@ -173,8 +194,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<div class="form-group row">
 									<div class="col-md-6 offset-md-4">
 										<div class="form-check">
-											<input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
+											<input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}<br > >
 											<label class="form-check-label" for="remember">
 												{{ __('Remember Me') }}
 											</label>
@@ -189,7 +209,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 										</button>
 
 										@if (Route::has('password.request'))
-											<a class="btn btn-link" href="{{ route('password.request') }}">
+											<a class="btn1 btn-link" href="{{ route('password.request') }}">
 												{{ __('Forgot Your Password?') }}
 											</a>
 										@endif
@@ -208,7 +228,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="footer">
 		<div class="wrap">
 			<div class="half-footer" style="margin-left:0">
-				<!--<ul class="feeds">
+				<ul class="feeds">
 					<h3>Our Latest feeds</h3>
 					<li>
 						<a href="index.html">Lorem ipsum dolor consectetur adiping</a>
@@ -225,14 +245,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<li>
 						<a href="contact.html">Nullam imperdiet vulputate congugue</a>
 					</li>
-				</ul>-->
+				</ul>
 				<div class="footer-pic">
 					<img src="../images/f-icon.png" alt="">
 				</div>
 				<div class="clear"></div>
 			</div>
 			<div class="half-footer" style="border:none">
-				<!--<ul class="adress">
+				<ul class="adress">
 					<h3>Catch on</h3>
 					<li>
 						<a href="index.html">Events Club</a>
@@ -249,7 +269,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<li>
 						<a href="mailto:example@mail.com">yourname(at)companyname.com</a>
 					</li>
-				</ul>-->
+				</ul>
 				<div class="footer-pic">
 					<img src="../images/foot-icon.png" alt="">
 				</div>

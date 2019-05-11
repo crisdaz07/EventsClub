@@ -52,7 +52,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="menu">
 					<ul>
 						<li>
-							<a href="home">INICIO</a>
+							<a href="welcome">INICIO</a>
 						</li>
 						<li>
 							<a href="categorias">CATEGORIAS</a>
@@ -63,10 +63,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<li>
 							<a href="blog">BLOG</a>
 						</li>
-						<li>
+						<li class="active">
 							<a href="contacto">CONTACTO</a>
 						</li>
-						<li class="active">
+						<li >
 							<a href="acerca">EQUIPO</a>
 						</li>
 						<li>
