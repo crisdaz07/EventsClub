@@ -53,9 +53,11 @@ class CategoriaController extends Controller
         $id_categoria = Categoria::getCategoria($nombre);
         $eventos = Evento::eventos($id_categoria);
 
-        //return $eventos->all();
-       
-        return view('categoriavista', compact('eventos','nombre'));
+        //return $eventos->all(); test
+        $ubicaciones = Evento::ubicaciones($id_categoria);
+
+        
+        return view('categoriavista', compact('eventos','nombre','ubicaciones'));
 
 
     }
