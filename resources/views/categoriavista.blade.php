@@ -36,6 +36,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		.header a1{
 			color: #610B4B;
 		}
+		.grid_1_of_3 h4{
+			color: #ffffff;
+			font-weight: bold;
+		}
 	
 	</style>
 </head>
@@ -127,6 +131,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											<img src="../images/Inicio/Rumba2.png" alt="">
 											<span>Leer Más</span>
 										</a>
+										<h4>{{ $e->descripcion }} </h4>
 								    </div>
 								</div>
 							@endif
