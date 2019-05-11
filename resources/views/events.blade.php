@@ -110,242 +110,29 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="wrap">
 			<div class="content_top">
 				<div class="events">
-					<h2>Deporte</h2>
-					<div class="section group">
-						<div class="grid_1_of_3 events_1_of_3">
-							<div class="event-time">
-								<h4>
-									<!--<span>sed quia non numqua</span>-->
-								</h4>
-								<h4>Sep 20, 2013</h4>
-							</div>
-							<div class="event-img">
-								<a href="blog.html">
-									<img src="images/Inicio/Rumba2.png" alt="">
-									<span>Leer Más</span>
-								</a>
-							</div>
-						</div>
-						<!--<div class="grid_1_of_3 events_1_of_3">
-							<div class="event-time">
-								<h4>
-									<span>Sed ut perspiciatis</span>
-								</h4>
-								<h4>Sep 14TH, 2013</h4>
-							</div>
-							<div class="event-img">
-								<a href="blog.html">
-									<img src="images/event-img2.jpg" alt="">
-									<span>Read More</span>
-								</a>
-							</div>
-						</div>
-						<div class="grid_1_of_3 events_1_of_3">
-							<div class="event-time">
-								<h4>
-									<span> vel illum qui dolorem</span>
-								</h4>
-								<h4>Sep 5TH, 2013</h4>
-							</div>
-							<div class="event-img">
-								<a href="blog.html">
-									<img src="images/event-img3.jpg" alt="">
-									<span>Read More</span>
-								</a>
-							</div>
-						</div>-->
-					</div>
-					<h2>Musica</h2>
-					<div class="section group">
-						<div class="grid_1_of_3 events_1_of_3">
-							<div class="event-time">
-								<h4>
-									<!--<span>sed quia non numqua</span>-->
-								</h4>
-								<h4>Sep 20, 2013</h4>
-							</div>
-							<div class="event-img">
-								<a href="blog.html">
-									<img src="images/Inicio/Atlantijazz_0.png" alt="">
-									<span>Leer Más</span>
-								</a>
-							</div>
-						</div>
-						<!--<div class="grid_1_of_3 events_1_of_3">
-							<div class="event-time">
-								<h4>
-									<span>Sed ut perspiciatis</span>
-								</h4>
-								<h4>Sep 14TH, 2013</h4>
-							</div>
-							<div class="event-img">
-								<a href="blog.html">
-									<img src="images/event-img2.jpg" alt="">
-									<span>Read More</span>
-								</a>
-							</div>
-						</div>
-						<div class="grid_1_of_3 events_1_of_3">
-							<div class="event-time">
-								<h4>
-									<span> vel illum qui dolorem</span>
-								</h4>
-								<h4>Sep 5TH, 2013</h4>
-							</div>
-							<div class="event-img">
-								<a href="blog.html">
-									<img src="images/event-img3.jpg" alt="">
-									<span>Read More</span>
-								</a>
-							</div>
-						</div>-->
-					</div>
-					<h2>Arte</h2>
-					<div class="section group">
-						<div class="grid_1_of_3 events_1_of_3">
-							<div class="event-time">
-								<h4>
-									<!--<span>sed quia non numqua</span>-->
-								</h4>
-								<h4>Sep 20, 2013</h4>
-							</div>
-							<div class="event-img">
-								<a href="blog.html">
-									<img src="images/Inicio/Cuentos2.png" alt="">
-									<span>Leer Más</span>
-								</a>
-							</div>
-						</div>
-						<div class="grid_1_of_3 events_1_of_3">
-							<div class="event-time">
-								<h4>
-									<!--<span>Sed ut perspiciatis</span>-->
-								</h4>
-								<h4>Sep 14, 2013</h4>
-							</div>
-							<div class="event-img">
-								<a href="blog.html">
-									<img src="images/Inicio/Killart2.png" alt="">
-									<span>Leer Más</span>
-								</a>
-							</div>
-						</div>
-						<div class="grid_1_of_3 events_1_of_3">
-							<div class="event-time">
-								<h4>
-									<!--<span> vel illum qui dolorem</span>-->
-								</h4>
-								<h4>Sep 10, 2013</h4>
-							</div>
-							<div class="event-img">
-								<a href="blog.html">
-									<img src="images/Inicio/LaTiendita.PNG" alt="">
-									<span>Leer Más</span>
-								</a>
-							</div>
-						</div>
-						<div class="grid_1_of_3 events_1_of_3">
-							<div class="event-time">
-								<h4>
-									<!--<span> vel illum qui dolorem</span>-->
-								</h4>
-								<h4>Sep 5, 2013</h4>
-							</div>
-							<div class="event-img">
-								<a href="blog.html">
-									<img src="images/Inicio/Libraq2.png" alt="">
-									<span>Leer Más</span>
-								</a>
-							</div>
-						</div>
-					</div>
-					<h2>Social</h2>
-					<div class="section group">
-						<div class="grid_1_of_3 events_1_of_3">
-							<div class="event-time">
-								<h4>
-									<!--<span>sed quia non numqua</span>-->
-								</h4>
-								<h4>Sep 20, 2013</h4>
-							</div>
-							<div class="event-img">
-								<a href="blog.html">
-									<img src="images/Inicio/animalaton2.png" alt="">
-									<span>Leer Más</span>
-								</a>
-							</div>
-						</div>
-						<div class="grid_1_of_3 events_1_of_3">
-							<div class="event-time">
-								<h4>
-									<!--<span>Sed ut perspiciatis</span>-->
-								</h4>
-								<h4>Sep 14, 2013</h4>
-							</div>
-							<div class="event-img">
-								<a href="blog.html">
-									<img src="images/Inicio/CiudadadoHonor2.png" alt="">
-									<span>Leer Más</span>
-								</a>
-							</div>
-						</div>
-						<div class="grid_1_of_3 events_1_of_3">
-							<div class="event-time">
-								<h4>
-									<!--<span> vel illum qui dolorem</span>-->
-								</h4>
-								<h4>Sep 10, 2013</h4>
-							</div>
-							<div class="event-img">
-								<a href="blog.html">
-									<img src="images/Inicio/Huellitas2.png" alt="">
-									<span>Leer Más</span>
-								</a>
-							</div>
-						</div>
-						<div class="grid_1_of_3 events_1_of_3">
-							<div class="event-time">
-								<h4>
-									<!--<span> vel illum qui dolorem</span>-->
-								</h4>
-								<h4>Sep 5, 2013</h4>
-							</div>
-							<div class="event-img">
-								<a href="blog.html">
-									<img src="images/Inicio/PetLoversjpg.jpg" alt="">
-									<span>Leer Más</span>
-								</a>
-							</div>
-						</div>
-						<div class="grid_1_of_3 events_1_of_3">
-							<div class="event-time">
-								<h4>
-									<!--<span> vel illum qui dolorem</span>-->
-								</h4>
-								<h4>Ago 30, 2013</h4>
-							</div>
-							<div class="event-img">
-								<a href="blog.html">
-									<img src="images/Inicio/Tapaton2.png" alt="">
-									<span>Leer Más</span>
-								</a>
-							</div>
-						</div>
-						<div class="grid_1_of_3 events_1_of_3">
-							<div class="event-time">
-								<h4>
-									<!--<span> vel illum qui dolorem</span>-->
-								</h4>
-								<h4>Ago 25, 2013</h4>
-							</div>
-							<div class="event-img">
-								<a href="blog.html">
-									<img src="images/Inicio/Trueque.jpg" alt="">
-									<span>Leer Más</span>
-								</a>
-							</div>
-						</div>
-					</div>
+					@foreach($categorias as $c) 
+						<h2>{{ $c->nombre }}</h2>
+					    @foreach($eventos as $e) 
+							@if( $c->id ==  $e->id_categoria )
+					        	<div class="section group">
+									<div class="grid_1_of_3 events_1_of_3">
+										<div class="event-time">
+											<h4>
+												<span> {{ $e->nombre }}</span>
+											</h4>
+											<h4>{{ $e->fecha_inicio }}</h4>
+										</div>
+										<div class="event-img">
+											<a href="blog.html">
+												<img src="images/Inicio/Rumba2.png" alt="">
+												<span>Leer Más</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							@endif		
+						@endforeach
+					@endforeach
 				</div>
 			</div>
 		</div>
