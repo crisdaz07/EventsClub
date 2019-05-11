@@ -39,7 +39,6 @@ class CategoriaController extends Controller
         $categoria = new Categoria;
         $categoria->nombre = $request->nombre;
         $categoria->descripcion = $request->descripcion;
-
         $categoria->save();
     }
 
@@ -51,10 +50,11 @@ class CategoriaController extends Controller
      */
     public function show($nombre)
     {
-
         $id_categoria = Categoria::getCategoria($nombre);
         echo "esta es la categoria". $id_categoria;
         $eventos = Evento::eventos($id_categoria);
+		
+	
 
         //return redirect('categoriavista')->with(compact('evento'));
         return view('categoriavista', compact('eventos'));
