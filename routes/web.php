@@ -28,7 +28,7 @@ Route::get('/login', 'rutasController@login');
 Route::resource('/evento', 'EventoController');
 Route::resource('/categoria', 'CategoriaController');
 Route::resource('/comentario', 'ComentarioController');
-
+ 
 /*Route::get('/home', function () {
     return view('home');
 });
