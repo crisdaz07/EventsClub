@@ -30,7 +30,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<title>Events Club a Entertainment Category Website Template | Events :: w3layouts</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
 	
 	<style >
 		.header a1{
@@ -46,7 +46,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="wrap">
 				<div class="logo">
 					<a href="welcome">
-						<img src="images/logo.png" alt="" />
+						<img src="../images/logo.png" alt="" />
 					</a>
 				</div>
 				<div class="menu">
@@ -124,7 +124,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									</div>
 									<div class="event-img">
 										<a href="blog.html">
-											<img src="images/Inicio/Rumba2.png" alt="">
+											<img src="../images/Inicio/Rumba2.png" alt="">
 											<span>Leer Más</span>
 										</a>
 								    </div>
@@ -159,7 +159,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</li>
 				</ul>
 				<div class="footer-pic">
-					<img src="images/f-icon.png" alt="">
+					<img src="../images/f-icon.png" alt="">
 				</div>
 				<div class="clear"></div>
 			</div>
@@ -183,7 +183,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</li>
 				</ul>
 				<div class="footer-pic">
-					<img src="images/foot-icon.png" alt="">
+					<img src="../images/foot-icon.png" alt="">
 				</div>
 			</div>
 			<div class="clear"></div>
