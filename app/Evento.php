@@ -13,4 +13,5 @@ class Evento extends Model
     	return Evento::where('id_categoria','=',$id_categoria)->get();
     }
 
+   
 }
