@@ -5,6 +5,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use App\Evento;
 use App\Categoria;
+use App\Imagen;
 class rutasController extends Controller{
 	
 
@@ -35,7 +36,9 @@ class rutasController extends Controller{
 		
 		$categorias = Categoria::all();  //todos las cateogiras para events
 
-		return view('categorias', compact('categorias','eventos'));
+		$imagenes = Imagen::getImagenForAll("e"); //Primera imagen de todos los eventos
+				
+		return view('categorias', compact('categorias','eventos','imagenes'));
 		
 	}
 	
