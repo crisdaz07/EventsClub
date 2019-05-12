@@ -27,8 +27,9 @@ class rutasController extends Controller{
 	public function index(){
 
 		$categorias = Categoria::all();  //todos los eventos para mostrar unos cuantos
-		
-		return view('welcome', compact('categorias'));
+		$categorias1 = $categorias->splice(0,3);
+
+		return view('welcome', compact('categorias','categorias1'));
 		
 	}
 
@@ -42,6 +43,7 @@ class rutasController extends Controller{
 		$fileName = $request->file->getClientOriginalName();
 		$request->file->move('multiple-picker/imgs',$fileName);
 		return response()->json(['uploaded'=>'multiple-picker/imgs/'.$fileName]);
+
 	}
 
 
