@@ -29,6 +29,12 @@ class rutasController extends Controller{
 		return view('welcome', compact('eventos'));
 		
 	}
+
+	public function file(){ //TODO borrar esta funcion
+		
+		return view('filepicker');
+		
+	}
 	
 	public function categorias(){
 		
