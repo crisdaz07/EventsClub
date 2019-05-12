@@ -119,31 +119,31 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="menu">
 					<ul>
 						<li>
-							<a href="welcome">INICIO</a>
+							<a href="../welcome">INICIO</a>
 						</li>
 						<li class="active">
-							<a href="categorias">CATEGORIAS</a>
+							<a href="../categorias">CATEGORIAS</a>
 						</li>
 						<li>
-							<a href="galeria">GALLERIA</a>
+							<a href="../galeria">GALLERIA</a>
 						</li>
 						<li>
-							<a href="blog">BLOG</a>
+							<a href="../blog">BLOG</a>
 						</li>
 						<li>
-							<a href="contacto">CONTACTO</a>
+							<a href="../contacto">CONTACTO</a>
 						</li>
 						<li>
-							<a href="acerca"> EQUIPO</a>
+							<a href="../acerca"> EQUIPO</a>
 						</li>
 						<li>
 							@guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('LOGIN') }}</a>
+                                <a class="nav-link" href="{{ route('../login') }}">{{ __('LOGIN') }}</a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('REGISTRO') }}</a>
+                                    <a class="nav-link" href="{{ route('../register') }}">{{ __('REGISTRO') }}</a>
                                 </li>
                             @endif
                         @else
