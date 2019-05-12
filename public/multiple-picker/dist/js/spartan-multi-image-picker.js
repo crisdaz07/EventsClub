@@ -33,7 +33,7 @@
             directUpload :  {
                 loaderIcon: '<i class="fas fa-sync fa-spin"></i>',
                 status:       false,
-                url:          '',
+                url:          'http://127.0.0.1:8000/getRoutes',
                 success:      function() {},
                 error:        function() {}
             },
@@ -185,6 +185,9 @@
                 type: 'POST',
                 data: formData,
                 cache: false,
+                headers: {
+                  'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },                    
                 processData: false,
                 contentType: false,
                 success: function(data, textStatus, jqXHR){
@@ -201,6 +204,13 @@
                     }
                 }
             });
+            $.ajaxSetup({
+                beforeSend: function(xhr, type) {
+                    if (!type.crossDomain) {
+                        xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'));
+                    }
+                },
+            });                      
 
         }
 

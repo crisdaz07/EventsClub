@@ -6,6 +6,8 @@ use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use App\Evento;
 use App\Categoria;
 use App\Imagen;
+use Illuminate\Support\Facades\Input;
+
 class rutasController extends Controller{
 	
 
@@ -24,9 +26,9 @@ class rutasController extends Controller{
 	
 	public function index(){
 
-		$eventos = Evento::all();  //todos los eventos para mostrar unos cuantos
+		$categorias = Categoria::all();  //todos los eventos para mostrar unos cuantos
 		
-		return view('welcome', compact('eventos'));
+		return view('welcome', compact('categoria'));
 		
 	}
 
@@ -37,8 +39,9 @@ class rutasController extends Controller{
 	}
 
 	public function getRoutes(Request $request){ //TODO borrar esta funcion
-		return $request->input('fileUpload');
-		//return view('filepicker');
+		$files = $request->file('fileUpload');
+
+	    return $request->fileUpload;
 		
 	}
 

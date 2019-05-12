@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Catgoria
 class HomeController extends Controller
 {
     /**
@@ -25,7 +25,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $categorias = Catgoria::all(); 
+        $imagenes = Imagen::getImagenForAll("c"); //Primera imagen de todos los eventos
+        return view('home', compact('categorias','imagenes'));
     }
 	
 	

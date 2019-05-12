@@ -4,7 +4,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
-	
+	<meta name="csrf-token" content="{{ csrf_token() }}">
 
 	<title></title>
 
@@ -13,11 +13,11 @@
 
 
 
-<form action="{{action('rutasController@getRoutes')}}" method="post">>
+<form action="{{action('rutasController@getRoutes')}}" method="post">
 	<div class="form-horizontal">
 		{{ csrf_field() }}
 	  <div class="form-group">
-
+		<p>hi</p> <br>
 	    <label class="control-label col-md-3">Upload Image</label>
 
 	    <div class="col-md-8">
@@ -80,9 +80,14 @@
  -->
 
 
-	<script type="text/javascript" src="../multiple-picker/dist/js/spartan-multi-image-picker-min.js"></script>
+	<script type="text/javascript" src="../multiple-picker/dist/js/spartan-multi-image-picker.js"></script>
 
 	<script type="text/javascript">
+		$.ajaxSetup({
+		headers: {
+		'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+		}
+		});		
 		$("#demo").spartanMultiImagePicker({
 
 		  fieldName:  'fileUpload[]'
