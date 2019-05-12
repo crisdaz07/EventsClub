@@ -1,6 +1,6 @@
 <?php
 namespace App\Http\Controllers;
-
+use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use App\Evento;
@@ -35,6 +35,14 @@ class rutasController extends Controller{
 		return view('filepicker');
 		
 	}
+
+	public function getRoutes(Request $request){ //TODO borrar esta funcion
+		return $request->input('fileUpload');
+		//return view('filepicker');
+		
+	}
+
+
 	
 	public function categorias(){
 		

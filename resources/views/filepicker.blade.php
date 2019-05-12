@@ -13,39 +13,39 @@
 
 
 
+<form action="{{action('rutasController@getRoutes')}}" method="post">>
+	<div class="form-horizontal">
+		{{ csrf_field() }}
+	  <div class="form-group">
 
-<div class="form-horizontal">
+	    <label class="control-label col-md-3">Upload Image</label>
 
-  <div class="form-group">
+	    <div class="col-md-8">
 
-    <label class="control-label col-md-3">Upload Image</label>
+	      <div class="row">
 
-    <div class="col-md-8">
+	        <div id="demo"></div>
 
-      <div class="row">
+	      </div>
 
-        <div id="demo"></div>
+	    </div>
 
-      </div>
+	  </div>
 
-    </div>
+	  <div class="form-group">
 
-  </div>
+	    <label class="control-label col-md-3"></label>
 
-  <div class="form-group">
+	    <div class="col-md-8">
 
-    <label class="control-label col-md-3"></label>
+	      <input type="submit" class="btn btn-primary" value="Send">
 
-    <div class="col-md-8">
+	    </div>
 
-      <input type="submit" class="btn btn-primary" value="Send">
+	  </div>
 
-    </div>
-
-  </div>
-
-</div>
-
+	</div>
+</form>
 
 
 
@@ -70,14 +70,14 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	
 
-	{{-- <script type="text/javascript" src="../image-picker/dist/js/spartan-multi-image-picker-min.js"></script>
+	<!--  <script type="text/javascript" src="../image-picker/dist/js/spartan-multi-image-picker-min.js"></script>
 
 	<script type="text/javascript">
 		$("#coba").spartanMultiImagePicker({
 			fieldName:   'fileUpload[]'
 		});		
-	</script> --}}
-
+	</script>
+ -->
 
 
 	<script type="text/javascript" src="../multiple-picker/dist/js/spartan-multi-image-picker-min.js"></script>

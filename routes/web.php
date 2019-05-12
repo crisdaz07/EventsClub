@@ -30,6 +30,7 @@ Route::resource('/categoria', 'CategoriaController');
 Route::resource('/comentario', 'ComentarioController');
 
 Route::get('/file', 'rutasController@file');
+Route::post('/getRoutes', 'rutasController@getRoutes');
 /*Route::get('/home', function () {
     return view('home');
 });
