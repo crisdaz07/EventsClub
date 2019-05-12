@@ -43,7 +43,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		.content_top h3{
 			color: #ffffff;
 			font-size: 100px;
-			
+		}
+		.event-time a{
+			color: #dc00ff;
+			font-size: 25px;
 		}
 	
 	</style>
@@ -121,14 +124,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<h3 align="center">{{ $nombre }}</h2>
 				<div class="events">
 					@foreach($ubicaciones as $u) 
-					    <a href=""> <h2>{{ $u->ubicacion }}</h2> </a>
+					    <h2>{{ $u->ubicacion }}</h2>
 						<div class="section group">
 					    @foreach($eventos as $e) 
 							@if( $e->ubicacion ==  $u->ubicacion )
 						 		<div class="grid_1_of_3 events_1_of_3">
 									<div class="event-time">
 										<h4>
-											<span> {{ $e->nombre }}</span>
+											<a href="../evento/{{ $e->id }}" >  {{ $e->nombre }} </a>
 										</h4>
 										<h4>{{ $e->fecha_inicio }}</h4>
 									</div>
