@@ -39,10 +39,9 @@ class rutasController extends Controller{
 	}
 
 	public function getRoutes(Request $request){ //TODO borrar esta funcion
-		$files = $request->file('fileUpload');
-
-	    return $request->fileUpload;
-		
+		$fileName = $request->file->getClientOriginalName();
+		$request->file->move('multiple-picker/imgs',$fileName);
+		return response()->json(['uploaded'=>'multiple-picker/imgs/'.$fileName]);
 	}
 
 
