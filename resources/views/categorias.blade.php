@@ -18,7 +18,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}" ></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -27,10 +27,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 	
-	<title>Events Club a Entertainment Category Website Template | Events :: w3layouts</title>
+	
+	<title>Events Club a Entertainment Category Website Template | Home :: w3layouts</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/slider.css" rel="stylesheet" type="text/css" media="all" />
+	<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+	<script type="text/javascript">
+		$(window).load(function () {
+			$('#slider').nivoSlider();
+		});
+	</script>
 	
 	<style >
 		.header a1{
@@ -38,15 +47,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		}
 	
 	</style>
+	
 </head>
 
 <body>
+	
 	<div class="header">
 		<div class="header_top">
 			<div class="wrap">
 				<div class="logo">
 					<a href="welcome">
-						<img src="images/logo.png" alt="" />
+						<img src="../images/logo.png" alt="" />
 					</a>
 				</div>
 				<div class="menu">
@@ -103,6 +114,26 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</ul>
 				</div>
 				<div class="clear"></div>
+			</div>
+		</div>
+	<div class="wrap">
+			<div class="slider">
+				<div class="slider-wrapper theme-default">
+					<div id="slider" class="nivoSlider">
+						<img src="images/Inicio/Atlantijazz_0.png" data-thumb="images/Inicio/Atlantijazz_0.png" alt="" />
+						<img src="images/Inicio/Killart2.png" data-thumb="images/Inicio/Killart2.png" alt="" />
+						<img src="images/Inicio/LaTiendita.PNG" data-thumb="images/Inicio/LaTiendita.PNG" alt="" />
+						<img src="images/Inicio/Libraq2.png" data-thumb="images/Inicio/Libraq2.png" alt="" />
+						<img src="images/Inicio/animalaton2.png" data-thumb="images/Inicio/animalaton2.png" alt="" />
+						<img src="images/Inicio/CiudadadoHonor2.png" data-thumb="images/Inicio/CiudadadoHonor2.png" alt="" />
+						<img src="images/Inicio/Cuentos2.png" data-thumb="images/Inicio/Cuentos2.png" alt="" />
+						<img src="images/Inicio/Huellitas2.png" data-thumb="images/Inicio/Huellitas2.png" alt="" />
+						<img src="images/Inicio/PetLoversjpg.jpg" data-thumb="images/Inicio/PetLoversjpg.jpg" alt="" />
+						<img src="images/Inicio/Rumba2.png" data-thumb="images/Inicio/Rumba2.png" alt="" />
+						<img src="images/Inicio/Tapaton2.png" data-thumb="images/Inicio/Tapaton2.png" alt="" />
+						<img src="images/Inicio/Trueque.jpg" data-thumb="images/Inicio/Trueque.jpg" alt="" />
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

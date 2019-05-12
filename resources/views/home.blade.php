@@ -19,7 +19,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -32,10 +32,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<title>Events Club a Entertainment Category Website Template | Home :: w3layouts</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="css/slider.css" rel="stylesheet" type="text/css" media="all" />
-	<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
-	<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+	<link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css" media="all" />
+	<link href="{{ asset('css/slider.css') }}" rel="stylesheet" type="text/css" media="all" />
+	<script type="text/javascript" src="{{asset('js/jquery-1.9.0.min.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('js/jquery.nivo.slider.js') }}"></script>
 	<script type="text/javascript">
 		$(window).load(function () {
 			$('#slider').nivoSlider();
@@ -50,9 +50,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 
 <body>
-	
-	
-	
 	<div class="header">
 		<div class="header_top">
 			<div class="wrap">

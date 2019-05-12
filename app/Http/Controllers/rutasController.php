@@ -50,9 +50,10 @@ class rutasController extends Controller{
 		
 		$categorias = Categoria::all();  //todos las cateogiras para events
 
-		$imagenes = Imagen::getImagenForAll("e"); //Primera imagen de todos los eventos
+		//$imagenes = Imagen::getImagenForAll("e"); //Primera imagen de todos los eventos
+		
 				
-		return view('categorias', compact('categorias','eventos','imagenes'));
+		return view('categorias', compact('categorias','eventos'));
 		
 	}
 	
@@ -95,3 +96,5 @@ class rutasController extends Controller{
 }
 
 ?>
+
+
