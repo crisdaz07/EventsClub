@@ -124,7 +124,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
 							aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 					</div>
-				<!---	<div class="col_1_of_3 span_1_of_3">
+				<div class="col_1_of_3 span_1_of_3">
 						<div class="menu_timmings">
 							<ul>
 								<li>
@@ -145,7 +145,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								</li>
 							</ul>
 						</div>
-					</div> --->
+					</div>
 					<div class="col_1_of_3 span_1_of_3">
 						<h2>
 							<span>Our team</span>
@@ -158,7 +158,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<h4>
 									<span>NEQUE LIGULA</span>
 								</h4>
-							<!--	<h4>Aug 28Th, 2013</h4> --->
+								<h4>Aug 28Th, 2013</h4>
 								<p>Lorem ipsum dolor sit amet consectetur dolor more normal of letters,
 									<a href="events.html">[...]</a>
 								</p>
@@ -173,7 +173,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<h4>
 									<span>DOLORE IPSUM</span>
 								</h4>
-								<!-- <h4>Aug 2ND, 2013</h4> --->
+								 <h4>Aug 2ND, 2013</h4> 
 								<p>Lorem ipsum dolor sit amet consectetur dolor more normal of letters,
 									<a href="events.html">[...]</a>
 								</p>
@@ -188,7 +188,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<h4>
 									<span>NEQUE LIGULA</span>
 								</h4>
-								<!--- <h4>july 28Th, 2013</h4> --->
+								<h4>july 28Th, 2013</h4>
 								<p>Lorem ipsum dolor sit amet consectetur dolor more normal of letters,
 									<a href="events.html">[...]</a>
 								</p>

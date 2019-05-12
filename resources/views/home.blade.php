@@ -19,7 +19,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -32,10 +32,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<title>Events Club a Entertainment Category Website Template | Home :: w3layouts</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="css/slider.css" rel="stylesheet" type="text/css" media="all" />
-	<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
-	<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+	<link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css" media="all" />
+	<link href="{{ asset('css/slider.css') }}" rel="stylesheet" type="text/css" media="all" />
+	<script type="text/javascript" src="{{asset('js/jquery-1.9.0.min.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('js/jquery.nivo.slider.js') }}"></script>
 	<script type="text/javascript">
 		$(window).load(function () {
 			$('#slider').nivoSlider();
@@ -50,9 +50,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 
 <body>
-	
-	
-	
 	<div class="header">
 		<div class="header_top">
 			<div class="wrap">
@@ -144,7 +141,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="listview_1_of_3 images_1_of_3 event_grid">
 					<a href="events.html">
 						<div class="listimg listimg_1_of_2">
-							<!---<img src="images/event_1.jpg" alt="" />--->
+							<img src="images/event_1.jpg" alt="" />
 						</div>
 						<div class="text list_1_of_2">
 							<div class="date">
@@ -157,7 +154,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="listview_1_of_3 images_1_of_3 event_grid">
 					<a href="events.html">
 						<div class="listimg listimg_1_of_2">
-							<!--<img src="images/event_2.jpg" alt="" />--->
+							<img src="images/event_2.jpg" alt="" />
 						</div>
 						<div class="text list_1_of_2">
 							<div class="date">
@@ -170,7 +167,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="listview_1_of_3 images_1_of_3 event_grid">
 					<a href="events.html">
 						<div class="listimg listimg_1_of_2">
-							<!--<img src="images/event_3.jpg" alt="" />-->
+							<img src="images/event_3.jpg" alt="" />
 						</div>
 						<div class="text list_1_of_2">
 							<div class="date">
@@ -189,11 +186,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<h5>
 							<span>01 Abril</span>
 						</h5>
-						<!--<h5>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor incididunt ut labore et dolore-->
-							<!--magna aliqua. </h5>-->
+						<h5>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h5>
 						<a href="#" class="button">Ver Más</a>
 					</div>
-					<!--<div class="col_1_of_3 span_1_of_3">
+					<div class="col_1_of_3 span_1_of_3">
 						<h3>New Tracks</h3>
 						<div class="track_list">
 							<ul>
@@ -226,14 +222,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								</li>
 							</ul>
 						</div>
-					</div>--->
+					</div>
 					<div class="col_1_of_3 span_1_of_3">
 						<h3>Ultimos Videos</h3>
 						<a href="gallery.html">
 							<img src="images/videos.jpg" alt="" />
 						</a>
-						<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna-->
-							<!--aliqua. </p>-->
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 						<a href="gallery.html" class="button">Ver Todos</a>
 					</div>
 				</div>
@@ -243,7 +238,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="footer">
 		<div class="wrap">
 			<div class="half-footer" style="margin-left:0">
-				<!--<ul class="feeds">
+				<ul class="feeds">
 					<h3>Our Latest feeds</h3>
 					<li>
 						<a href="index.html">Lorem ipsum dolor consectetur adiping</a>
@@ -260,14 +255,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<li>
 						<a href="contact.html">Nullam imperdiet vulputate congugue</a>
 					</li>
-				</ul>-->
+				</ul>
 				<div class="footer-pic">
 					<img src="images/f-icon.png" alt="">
 				</div>
 				<div class="clear"></div>
 			</div>
 			<div class="half-footer" style="border:none">
-				<!--<ul class="adress">
+				<ul class="adress">
 					<h3>Catch on</h3>
 					<li>
 						<a href="index.html">Events Club</a>
@@ -284,7 +279,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<li>
 						<a href="mailto:example@mail.com">yourname(at)companyname.com</a>
 					</li>
-				</ul>-->
+				</ul>
 				<div class="footer-pic">
 					<img src="images/foot-icon.png" alt="">
 				</div>
