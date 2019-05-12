@@ -28,7 +28,7 @@ class rutasController extends Controller{
 
 		$categorias = Categoria::all();  //todos los eventos para mostrar unos cuantos
 		
-		return view('welcome', compact('categoria'));
+		return view('welcome', compact('categorias'));
 		
 	}
 
