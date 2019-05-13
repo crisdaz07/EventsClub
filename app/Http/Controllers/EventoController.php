@@ -40,7 +40,7 @@ class EventoController extends Controller
     public function store(Request $request)
     {
         $evento = new Evento;
-        $evento->id_usuario = 44;
+        $evento->id_usuario = 44; //TODO obtener id del usuario real
         $evento->id_categoria = Categoria::getCategoria($request->categoria);
         $evento->nombre = $request->nombre;
         $evento->descripcion = $request->descripcion;

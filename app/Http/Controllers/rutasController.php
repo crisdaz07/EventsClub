@@ -47,7 +47,7 @@ class rutasController extends Controller{
 		$imagen = new Imagen;
         $imagen->ruta = "multiple-picker/imgs/".$fileName;
         $imagen->tipo = "e";
-        $imagen->id_tipo = $evento->id;
+        $imagen->id_tipo = 545;
         $imagen->save();
 
 		return response()->json(['uploaded'=>'multiple-picker/imgs/'.$fileName]);
