@@ -8,6 +8,7 @@ class Imagen extends Model
 {
     protected $table = 'imagenes';
     
+    public $timestamps = false;
 
 
     public static function getImagenForAll($tipo){

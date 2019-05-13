@@ -42,6 +42,14 @@ class rutasController extends Controller{
 	public function getRoutes(Request $request){ //TODO borrar esta funcion
 		$fileName = $request->file->getClientOriginalName();
 		$request->file->move('multiple-picker/imgs',$fileName);
+
+		$evento = new Evento;
+		$imagen = new Imagen;
+        $imagen->ruta = "multiple-picker/imgs/".$fileName;
+        $imagen->tipo = "e";
+        $imagen->id_tipo = $evento->id;
+        $imagen->save();
+
 		return response()->json(['uploaded'=>'multiple-picker/imgs/'.$fileName]);
 
 	}
