@@ -8,6 +8,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 
 <head>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+ 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	
 	<title>Events Club a Entertainment Category Website Template | Home :: w3layouts</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -15,12 +24,30 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<link href="css/slider.css" rel="stylesheet" type="text/css" media="all" />
 	<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
 	<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+	
 	<script type="text/javascript">
 		$(window).load(function () {
 			$('#slider').nivoSlider();
 		});
 	</script>
+
 </head>
+	
+<style >
+	.content_top img{
+		height: 300px;
+	    width: 250px;
+	}
+	
+	.content_top.event-img h2{
+		font-size: 100px;
+	}
+	.container h2{
+		color: white;
+	}
+	
+	
+</style>
 
 <body>
 	<div class="header">
@@ -95,6 +122,58 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="container">
+	  <div class="carousel slide" data-ride="carousel" id="multi_item">
+		<div class="carousel-inner">
+		  <div class="carousel-item active">
+			<div class="row">
+			  <div class="col-sm">
+				  @foreach($categorias1 as $ca)
+						<div class="grid_1_of_3 events_1_of_3">
+							<h2>{{ $ca->nombre }}</h2>
+							<div class="event-img">
+								<a href="">
+									<img src="../images/Inicio/Rumba2.png" alt="">
+								</a>
+								<h2 style="font-size: 20px" > {{ $ca->descripcion }} </h2>
+							</div>	
+						</div>
+					@endforeach	
+			  </div>
+			</div>
+		  </div>
+		 @foreach ($categorias->chunk(3) as $chunk)
+			<div class="carousel-item">
+				<div class="row">
+					<div class="col-sm">
+						@foreach ($chunk as $c)
+						<div class="grid_1_of_3 events_1_of_3">
+							<h2>{{ $c->nombre }}</h2>
+							<div class="event-img">
+								<a href="">
+									<img src="../images/Inicio/Rumba2.png" alt="">
+								</a>
+								<h2 style="font-size: 20px" > {{ $c->descripcion }} </h2>
+							</div>
+						</div>
+						@endforeach
+					</div>
+				</div>
+		   </div>
+		@endforeach	
+		</div>
+		<a class="carousel-control-prev" href="#multi_item" role="button" data-slide="prev">
+		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		  <span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#multi_item" role="button" data-slide="next">
+		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		  <span class="sr-only">Next</span>
+		</a>
+	  </div>
+</div>
+		
 		<!------End Slider ------------>
 	</div>
 	<div class="main">

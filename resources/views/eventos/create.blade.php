@@ -5,9 +5,7 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE HTML>
-<html>
-
-<head>
+<html><head>
 	<title>Events Club a Entertainment Category Website Template | Home :: w3layouts</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -23,7 +21,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
-	</script>
+	{{--File picker links--}}
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.5.2/css/fileinput.css" />
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	
 	<style type="text/css">
 	body{
 
@@ -40,7 +42,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         border-radius: 3px;
     }
 	.signup-form{
-		width: 400px;
+		width: 700px;
 		margin: 0 auto;
 		padding: 30px 0;
 		margin-top: -30px;
@@ -113,30 +115,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	}
 
 	textarea{
-		width: 340px;
-		height: 300px;
+		width: 640px;
+		height: 150px;
+		margin-left: 10px;
+		margin-top: -20px;
 	}
 
 	SELECT{
 		width: 160px;
 	    height: 300;
 	}
-</style>
-
-
-	{{--File picker links--}}
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.5.2/css/fileinput.css" />
-	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-	 <style type="text/css">
-	  .main-section{
+		
+	.main-section{
 	   margin: 0 auto;
 	   padding:20px;
-	   margin-top:100px;
+	   margin-top: 0px;
 	   background-color: #fff;
 	   box-shadow: 0px 0px 20px #c1c1c1;
+	   height: 400px;
+	   width: 640px;
 	  }
-	 </style>	
+</style>	
 </head>
 
 <body>
@@ -218,7 +217,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
        					 </div>										
 					</div>
 				</div>
-				{{--File picker workplace--}}
+				<div class="form-group">
+					<div class="row">
+						<div class="form-group">
+             				<textarea name="descripcion" placeholder="Descripcion." required>
+							</textarea>
+       					 </div>
+						{{--File picker workplace--}}
 				<div class="container">
 					<div class="col-lg-12 col-sm-12 col-l1 main-section">
 						<input type="hidden" name="_token" value="{{csrf_token()}}">
@@ -227,12 +232,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					    </div>						
 					</div>					
 				</div>
-				<div class="form-group">
-					<div class="row">
-						<div class="form-group">
-             				<textarea name="descripcion" placeholder="Descripcion." required>
-							</textarea>
-       					 </div>
 					</div>
 				</div>
 				<div class="form-group">
@@ -242,10 +241,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 		<!------End Slider ------------>
 	</div>
-	<div class="main">
-
-	</div>
-
 	<div class="footer">
 		<div class="wrap">
 			<div class="half-footer" style="margin-left:0">
