@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Evento;
 use App\Categoria;
+use App\Imagen;
 
 class EventoController extends Controller
 {
@@ -49,8 +50,22 @@ class EventoController extends Controller
         $evento->fecha_fin = $request->fecha_fin;
         $evento->hora_inicio = $request->hora_inicio;
         $evento->hora_fin = $request->hora_fin;
-
         $evento->save();
+
+        $files = $request->file('files');
+        foreach ($files as $file) {
+            $fileName = $file->getClientOriginalName();
+            $file->move(public_path('multiple-picker/imgs'),$fileName);
+           
+            $imagen = new Imagen;
+            $imagen->ruta = "multiple-picker/imgs/".$fileName;
+            $imagen->tipo = "e";
+            $imagen->id_tipo = $evento->id;
+            $imagen->save();            
+        }        
+
+
+
 
         return redirect('categorias');
     }

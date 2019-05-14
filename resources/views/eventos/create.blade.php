@@ -26,8 +26,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	
 	{{--File picker--}}
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="File-Upload/css/style.css">
-	<link rel="stylesheet" href="File-Upload/css/jquery.fileupload.css">	
+	<link rel="stylesheet" href="../File-Upload/css/style.css">
+	<link rel="stylesheet" href="../File-Upload/css/jquery.fileupload.css">	
 	{{--##############--}}
 
 
@@ -359,9 +359,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 {{--File picker scripts--}}
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
-<script src="File-Upload/js/vendor/jquery.ui.widget.js"></script>
-<script src="File-Upload/js/jquery.iframe-transport.js"></script>
-<script src="File-Upload/js/jquery.fileupload.js"></script>
+<script src="../File-Upload/js/vendor/jquery.ui.widget.js"></script>
+<script src="../File-Upload/js/jquery.iframe-transport.js"></script>
+<script src="../File-Upload/js/jquery.fileupload.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <script>
