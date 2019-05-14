@@ -57,17 +57,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<li>
 							<a href="categorias">CATEGORIAS</a>
 						</li>
-						<li>
+						<!--<li>
 							<a href="galeria">GALLERIA</a>
 						</li>
 						<li>
 							<a href="blog">BLOG</a>
-						</li>
+						</li>-->
 						<li>
 							<a href="contacto">CONTACTO</a>
 						</li>
 						<li class="active">
-							<a href="about.html">EQUIPO</a>
+							<a href="about.html">NUESTRO EQUIPO</a>
 						</li>
 						<li>
 							@guest
@@ -112,19 +112,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="section group">
 					<div class="col_1_of_3 span_1_of_3">
 						<h2>
-							<span>About us</span>
+							<span>Acerca de nosotros.</span>
 						</h2>
-						<h4>Lorem ipsum dolor sit amet</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-							aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-							aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-							aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<h4>Motivacion.</h4>
+						<p>Somos un grupo de estudiantes de ingenieria de sistemas de 7mo semestre de La universidad del norte de Barranquilla, motivados por el gusto de aprender cada dia algo nuevo.</p>
 					</div>
-				<div class="col_1_of_3 span_1_of_3">
+				<!--<div class="col_1_of_3 span_1_of_3">
 						<div class="menu_timmings">
 							<ul>
 								<li>
@@ -145,58 +138,38 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								</li>
 							</ul>
 						</div>
-					</div>
-					<div class="col_1_of_3 span_1_of_3">
+					</div>-->
+					<div class="col_1_of_3 span_1_of_3" style="margin-left: 300px ">
 						<h2>
-							<span>Our team</span>
+							<span>Numestro equipo.</span>
 						</h2>
 						<div class="event-grid">
 							<div class="event_img">
-								<img src="images/event1.jpg" title="post1" alt="">
+								<img src="images/WhatsApp Image 2019-05-14 at 01.51.21.jpeg" title="post1" alt="">
 							</div>
 							<div class="event_desc">
 								<h4>
-									<span>NEQUE LIGULA</span>
+									<span>Andres Pertuz</span>
 								</h4>
-								<h4>Aug 28Th, 2013</h4>
-								<p>Lorem ipsum dolor sit amet consectetur dolor more normal of letters,
-									<a href="events.html">[...]</a>
-								</p>
+								<h4>Lider.</h4>
+								<h4>Diseñador.</h4>
+								<h4>Analista.</h4>
 							</div>
 							<div class="clear"> </div>
 						</div>
 						<div class="event-grid">
 							<div class="event_img">
-								<img src="images/event2.jpg" title="post1" alt="">
+								<img src="images/IMG_20160730_124522.jpg"  title="post1" alt="">
 							</div>
 							<div class="event_desc">
 								<h4>
-									<span>DOLORE IPSUM</span>
+									<span>Cristian Zapata</span>
 								</h4>
-								 <h4>Aug 2ND, 2013</h4> 
-								<p>Lorem ipsum dolor sit amet consectetur dolor more normal of letters,
-									<a href="events.html">[...]</a>
-								</p>
+								 <h4>Lider.</h4>
+								<h4>Desarrollador.</h4>
+								<h4>Analista.</h4>
 							</div>
 							<div class="clear"> </div>
-						</div>
-						<div class="event-grid">
-							<div class="event_img">
-								<img src="images/event3.jpg" title="post1" alt="">
-							</div>
-							<div class="event_desc">
-								<h4>
-									<span>NEQUE LIGULA</span>
-								</h4>
-								<h4>july 28Th, 2013</h4>
-								<p>Lorem ipsum dolor sit amet consectetur dolor more normal of letters,
-									<a href="events.html">[...]</a>
-								</p>
-							</div>
-							<div class="clear"> </div>
-						</div>
-						<div class="view-all">
-							<a href="events.html">ViewAll</a>
 						</div>
 					</div>
 				</div>
@@ -207,21 +180,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="wrap">
 			<div class="half-footer" style="margin-left:0">
 				<ul class="feeds">
-					<h3>Our Latest feeds</h3>
+					<h3>Funciones.</h3>
 					<li>
-						<a href="index.html">Lorem ipsum dolor consectetur adiping</a>
+						<a href="">Categorias de eventos.</a>
 					</li>
 					<li>
-						<a href="blog.html">Nunc sagittis mollis eros, at venenatis</a>
+						<a href="">Eventos.</a>
 					</li>
 					<li>
-						<a href="blog.html">Morbi nec dolor ipsum vel congugue</a>
+						<a href="">Crear tu evento.</a>
 					</li>
 					<li>
-						<a href="blog.html">Nullam a odio ipsum, at sodales lorem.</a>
+						<a href="">Comparte tu evento.</a>
 					</li>
 					<li>
-						<a href="contact.html">Nullam imperdiet vulputate congugue</a>
+						<a href="">Eventos por ubicacion.</a>
 					</li>
 				</ul>
 				<div class="footer-pic">
@@ -231,21 +204,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 			<div class="half-footer" style="border:none">
 				<ul class="adress">
-					<h3>Catch on</h3>
+					<h3>Informacion.</h3>
 					<li>
-						<a href="index.html">Events Club</a>
+						<a href="">EventsClub.</a>
 					</li>
 					<li>
-						<a href="blog.html">West Coast, CA</a>
+						<a href="">Barranquilla.</a>
 					</li>
 					<li>
-						<a href="blog.html">Facebook - I Music</a>
+						<a href="">Universidad del norte.</a>
 					</li>
 					<li>
-						<a href="blog.html">Login</a>
+						<a href="">Diseño de software.</a>
 					</li>
 					<li>
-						<a href="mailto:example@mail.com">yourname(at)companyname.com</a>
+						<a href="">TuringSoft.</a>
 					</li>
 				</ul>
 				<div class="footer-pic">

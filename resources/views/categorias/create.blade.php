@@ -176,12 +176,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<li>
 							<a href="../categorias">CATEGORIAS</a>
 						</li>
-						<li>
+						<!--<li>
 							<a href="../galeria">GALLERIA</a>
 						</li>
 						<li>
 							<a href="../blog">BLOG</a>
-						</li>
+						</li>-->
 						<li>
 							<a href="../contacto">CONTACTO</a>
 						</li>
@@ -235,49 +235,49 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="wrap">
 			<div class="half-footer" style="margin-left:0">
 				<ul class="feeds">
-					<h3>Our Latest feeds</h3>
+					<h3>Funciones.</h3>
 					<li>
-						<a href="index.html">Lorem ipsum dolor consectetur adiping</a>
+						<a href="">Categorias de eventos.</a>
 					</li>
 					<li>
-						<a href="blog.html">Nunc sagittis mollis eros, at venenatis</a>
+						<a href="">Eventos.</a>
 					</li>
 					<li>
-						<a href="blog.html">Morbi nec dolor ipsum vel congugue</a>
+						<a href="">Crear tu evento.</a>
 					</li>
 					<li>
-						<a href="blog.html">Nullam a odio ipsum, at sodales lorem.</a>
+						<a href="">Comparte tu evento.</a>
 					</li>
 					<li>
-						<a href="contact.html">Nullam imperdiet vulputate congugue</a>
+						<a href="">Eventos por ubicacion.</a>
 					</li>
 				</ul>
 				<div class="footer-pic">
-					<img src="../images/f-icon.png" alt="">
+					<img src="images/f-icon.png" alt="">
 				</div>
 				<div class="clear"></div>
 			</div>
 			<div class="half-footer" style="border:none">
 				<ul class="adress">
-					<h3>Catch on</h3>
+					<h3>Informacion.</h3>
 					<li>
-						<a href="index.html">Events Club</a>
+						<a href="">EventsClub.</a>
 					</li>
 					<li>
-						<a href="blog.html">West Coast, CA</a>
+						<a href="">Barranquilla.</a>
 					</li>
 					<li>
-						<a href="blog.html">Facebook - I Music</a>
+						<a href="">Universidad del norte.</a>
 					</li>
 					<li>
-						<a href="blog.html">Login</a>
+						<a href="">Diseño de software.</a>
 					</li>
 					<li>
-						<a href="mailto:example@mail.com">yourname(at)companyname.com</a>
+						<a href="">TuringSoft.</a>
 					</li>
 				</ul>
 				<div class="footer-pic">
-					<img src="../images/foot-icon.png" alt="">
+					<img src="images/foot-icon.png" alt="">
 				</div>
 			</div>
 			<div class="clear"></div>
