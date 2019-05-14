@@ -70,7 +70,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							@if (session('status'))
 								<a href="welcome">INICIO</a>
 							@else
-								<a href="home">INICIO</a>
+								<a href="welcome">INICIO</a>
 							@endif
 						</li>
 						<li class="active">

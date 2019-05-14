@@ -46,6 +46,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		color: white;
 		font-family: 'caviar_dreamsregular';
 	}
+	.carousel-control-prev span{
+		margin-right:  150px;
+	}
+	.carousel-inner{
+		margin-left: 25px;
+	}
 	
 	
 </style>
@@ -140,7 +146,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							</a>
 							<div class="event-img">
 								<a href="">
-									<img src="../images/Inicio/Rumba2.png" alt="">
+									<img src="../images/barranq_1311975958.jpg" alt="">
 								</a>
 								<h2 style="font-size: 20px" > {{ $ca->descripcion }} </h2>
 							</div>	
@@ -160,7 +166,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							</a>
 							<div class="event-img">
 								<a href="">
-									<img src="../images/Inicio/Rumba2.png" alt="">
+									<img src="../images/barranq_1311975958.jpg" alt="">
 								</a>
 								<h2 style="font-size: 20px" > {{ $c->descripcion }} </h2>
 							</div>

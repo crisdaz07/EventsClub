@@ -55,7 +55,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		color: white;
 		font-family: 'caviar_dreamsregular';
 	}
-	
+	 
+	.carousel-control-prev span{
+		margin-right:  150px;
+	}
+	.carousel-inner{
+		margin-left: 25px;
+	}
 	
 </style>
 	
