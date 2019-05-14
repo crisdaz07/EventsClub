@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Categoria;
 use App\Evento;
-
+use App\Imagen;
 class CategoriaController extends Controller
 {
     /**
@@ -40,6 +40,19 @@ class CategoriaController extends Controller
         $categoria->nombre = $request->nombre;
         $categoria->descripcion = $request->descripcion;
         $categoria->save();
+
+        $files = $request->file('files');
+        foreach ($files as $file) {
+            $fileName = $file->getClientOriginalName();
+            $file->move(public_path('imagenesCategorias'),$fileName);
+           
+            $imagen = new Imagen;
+            $imagen->ruta = "imagenesCategorias/".$fileName;
+            $imagen->tipo = "c";
+            $imagen->id_tipo = $categoria->id;
+            $imagen->save();            
+        } 
+        return redirect('categorias');
     }
 
     /**

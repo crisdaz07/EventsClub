@@ -58,7 +58,7 @@ class EventoController extends Controller
             $file->move(public_path('imagenesEventos'),$fileName);
            
             $imagen = new Imagen;
-            $imagen->ruta = "imagenesEventos".$fileName;
+            $imagen->ruta = "imagenesEventos/".$fileName;
             $imagen->tipo = "e";
             $imagen->id_tipo = $evento->id;
             $imagen->save();            
