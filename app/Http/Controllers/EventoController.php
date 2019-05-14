@@ -55,10 +55,10 @@ class EventoController extends Controller
         $files = $request->file('files');
         foreach ($files as $file) {
             $fileName = $file->getClientOriginalName();
-            $file->move(public_path('multiple-picker/imgs'),$fileName);
+            $file->move(public_path('imagenesEventos'),$fileName);
            
             $imagen = new Imagen;
-            $imagen->ruta = "multiple-picker/imgs/".$fileName;
+            $imagen->ruta = "imagenesEventos".$fileName;
             $imagen->tipo = "e";
             $imagen->id_tipo = $evento->id;
             $imagen->save();            
