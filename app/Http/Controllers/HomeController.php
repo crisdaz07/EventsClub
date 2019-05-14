@@ -29,10 +29,10 @@ class HomeController extends Controller
         $categorias = Categoria::all(); 
         $categorias1 = $categorias->splice(0,3);
         
-        /*$imagenes = Imagen::getImagenForAll("c"); //Primera imagen de todos los eventos
-        $imagenes1 = $imagenes->splice(0,3)*/;
+        $imagenes = Imagen::getImagenForAll("c"); //Primera imagen de todos los eventos
+        $imagenes1 = $imagenes->splice(0,3);
 
-        return view('home', compact('categorias','categorias1'));
+        return view('home', compact('categorias','categorias1','imagenes','imagenes1'));
     }
 	
 	
