@@ -35,14 +35,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<style >
 		.header a1{
 			color: #610B4B;
+			font-family: 'caviar_dreamsregular';
 		}
 		.grid_1_of_3 h4{
 			color: #ffffff;
 			font-weight: bold;
+			font-family: 'caviar_dreamsregular';
 		}
 		.content_top h3{
 			color: #ffffff;
 			font-size: 100px;
+			font-family: 'caviar_dreamsregular';
 			
 		}
 	
@@ -89,21 +92,25 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			font-weight: bold;
 			font-size: 25px;
 			margin-top: 30px;
+			font-family: 'caviar_dreamsregular';
 		}
 		.container h3{
 			font-weight: bold;
 			font-size: 30px;
 			color: #929292;
+			font-family: 'caviar_dreamsregular';
 		}
 		.container h4{
 			font-weight: bold;
 			font-size: 30px;
 			color: #E60085;
+			font-family: 'caviar_dreamsregular';
 		}
 		.container h1{
 			margin-left: 100px;
 			margin-top: 5px;
 			color: #929292;
+			font-family: 'caviar_dreamsregular';
 	</style>
 </head>
 
@@ -119,22 +126,26 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="menu">
 					<ul>
 						<li>
-							<a href="../welcome">INICIO</a>
+							@if (session('status'))
+								<a href="../welcome">INICIO</a>
+							@else
+								<a href="../home">INICIO</a>
+							@endif
 						</li>
 						<li class="active">
 							<a href="../categorias">CATEGORIAS</a>
 						</li>
-						<li>
+						<!--<li>
 							<a href="../galeria">GALLERIA</a>
 						</li>
 						<li>
 							<a href="../blog">BLOG</a>
-						</li>
+						</li>-->
 						<li>
 							<a href="../contacto">CONTACTO</a>
 						</li>
 						<li>
-							<a href="../acerca"> EQUIPO</a>
+							<a href="../acerca">NUESTRO EQUIPO</a>
 						</li>
 						<li>
 							@guest
@@ -222,49 +233,49 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="wrap">
 			<div class="half-footer" style="margin-left:0">
 				<ul class="feeds">
-					<h3>Our Latest feeds</h3>
+					<h3>Funciones.</h3>
 					<li>
-						<a href="index.html">Lorem ipsum dolor consectetur adiping</a>
+						<a href="">Categorias de eventos.</a>
 					</li>
 					<li>
-						<a href="blog.html">Nunc sagittis mollis eros, at venenatis</a>
+						<a href="">Eventos.</a>
 					</li>
 					<li>
-						<a href="blog.html">Morbi nec dolor ipsum vel congugue</a>
+						<a href="">Crear tu evento.</a>
 					</li>
 					<li>
-						<a href="blog.html">Nullam a odio ipsum, at sodales lorem.</a>
+						<a href="">Comparte tu evento.</a>
 					</li>
 					<li>
-						<a href="contact.html">Nullam imperdiet vulputate congugue</a>
+						<a href="">Eventos por ubicacion.</a>
 					</li>
 				</ul>
 				<div class="footer-pic">
-					<img src="../images/f-icon.png" alt="">
+					<img src="images/f-icon.png" alt="">
 				</div>
 				<div class="clear"></div>
 			</div>
 			<div class="half-footer" style="border:none">
 				<ul class="adress">
-					<h3>Catch on</h3>
+					<h3>Informacion.</h3>
 					<li>
-						<a href="index.html">Events Club</a>
+						<a href="">EventsClub.</a>
 					</li>
 					<li>
-						<a href="blog.html">West Coast, CA</a>
+						<a href="">Barranquilla.</a>
 					</li>
 					<li>
-						<a href="blog.html">Facebook - I Music</a>
+						<a href="">Universidad del norte.</a>
 					</li>
 					<li>
-						<a href="blog.html">Login</a>
+						<a href="">Diseño de software.</a>
 					</li>
 					<li>
-						<a href="mailto:example@mail.com">yourname(at)companyname.com</a>
+						<a href="">TuringSoft.</a>
 					</li>
 				</ul>
 				<div class="footer-pic">
-					<img src="../images/foot-icon.png" alt="">
+					<img src="images/foot-icon.png" alt="">
 				</div>
 			</div>
 			<div class="clear"></div>

@@ -42,9 +42,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		});
 	</script>
 	<style >
-		.header a1{
-			color: #610B4B;
-		}
+		<style >
+	.content_top img{
+		height: 300px;
+	    width: 250px;
+	}
+	
+	.content_top.event-img h2{
+		font-size: 100px;
+	}
+	.container h2{
+		color: white;
+		font-family: 'caviar_dreamsregular';
+	}
+	 
+	.carousel-control-prev span{
+		margin-right:  150px;
+	}
+	.carousel-inner{
+		margin-left: 25px;
+	}
+	
+</style>
 	
 	</style>
 </head>
@@ -66,14 +85,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<li>
 							<a href="categorias">CATEGORIAS</a>
 						</li>
-						<li>
+						<!--<li>
 							<a href="galeria">GALLERIA</a>
-						</li>
+						</li>-->
 						<li>
 							<a href="contacto">CONTACTO</a>
 						</li>
 						<li>
-							<a href="acerca">EQUIPO</a>
+							<a href="acerca">NUESTRO EQUIPO</a>
 						</li>
 						<li>
 							@guest
@@ -133,6 +152,62 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="container">
+	  <div class="carousel slide" data-ride="carousel" id="multi_item">
+		<div class="carousel-inner">
+		  <div class="carousel-item active">
+			<div class="row">
+			  <div class="col-sm">
+				  @foreach($categorias1 as $ca)
+						<div class="grid_1_of_3 events_1_of_3">
+							<a href="/categoria/{{ $ca->nombre }}" >
+								<h2 style="font-size: 40px" >{{ $ca->nombre }}</h2>
+							</a>
+							<div class="event-img">
+								<a href="">
+									<img src="../images/Inicio/Rumba2.png" alt="">
+								</a>
+								<h2 style="font-size: 20px" > {{ $ca->descripcion }} </h2>
+							</div>	
+						</div>
+					@endforeach	
+			  </div>
+			</div>
+		  </div>
+		 @foreach ($categorias->chunk(3) as $chunk)
+			<div class="carousel-item">
+				<div class="row">
+					<div class="col-sm">
+						@foreach ($chunk as $c)
+						<div class="grid_1_of_3 events_1_of_3">
+							<a href="/categoria/{{ $c->nombre }}" >
+								<h2 style="font-size: 40px" >{{ $c->nombre }}</h2>
+							</a>
+							<div class="event-img">
+								<a href="">
+									<img src="../images/Inicio/Rumba2.png" alt="">
+								</a>
+								<h2 style="font-size: 20px" > {{ $c->descripcion }} </h2>
+							</div>
+						</div>
+						@endforeach
+					</div>
+				</div>
+		   </div>
+		@endforeach	
+		</div>
+		<a class="carousel-control-prev" href="#multi_item" role="button" data-slide="prev">
+		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		  <span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#multi_item" role="button" data-slide="next">
+		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		  <span class="sr-only">Next</span>
+		</a>
+	  </div>
+</div>
+		
 		<!------End Slider ------------>
 	</div>
 	<div class="main">
@@ -161,6 +236,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<figure>
 									<span>PROXIMO</span>EVENTO</figure>
 							</div>
+							
 						</div>
 					</a>
 				</div>
@@ -186,7 +262,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<h5>
 							<span>01 Abril</span>
 						</h5>
-						<h5>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h5>
+						<h5>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor incididunt ut labore et dolore-magna aliqua. </h5>
 						<a href="#" class="button">Ver Más</a>
 					</div>
 					<div class="col_1_of_3 span_1_of_3">
@@ -228,7 +304,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<a href="gallery.html">
 							<img src="images/videos.jpg" alt="" />
 						</a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna-->aliqua. </p>
 						<a href="gallery.html" class="button">Ver Todos</a>
 					</div>
 				</div>
@@ -239,21 +315,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="wrap">
 			<div class="half-footer" style="margin-left:0">
 				<ul class="feeds">
-					<h3>Our Latest feeds</h3>
+					<h3>Funciones.</h3>
 					<li>
-						<a href="index.html">Lorem ipsum dolor consectetur adiping</a>
+						<a href="">Categorias de eventos.</a>
 					</li>
 					<li>
-						<a href="blog.html">Nunc sagittis mollis eros, at venenatis</a>
+						<a href="">Eventos.</a>
 					</li>
 					<li>
-						<a href="blog.html">Morbi nec dolor ipsum vel congugue</a>
+						<a href="">Crear tu evento.</a>
 					</li>
 					<li>
-						<a href="blog.html">Nullam a odio ipsum, at sodales lorem.</a>
+						<a href="">Comparte tu evento.</a>
 					</li>
 					<li>
-						<a href="contact.html">Nullam imperdiet vulputate congugue</a>
+						<a href="">Eventos por ubicacion.</a>
 					</li>
 				</ul>
 				<div class="footer-pic">
@@ -263,21 +339,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 			<div class="half-footer" style="border:none">
 				<ul class="adress">
-					<h3>Catch on</h3>
+					<h3>Informacion.</h3>
 					<li>
-						<a href="index.html">Events Club</a>
+						<a href="">EventsClub.</a>
 					</li>
 					<li>
-						<a href="blog.html">West Coast, CA</a>
+						<a href="">Barranquilla.</a>
 					</li>
 					<li>
-						<a href="blog.html">Facebook - I Music</a>
+						<a href="">Universidad del norte.</a>
 					</li>
 					<li>
-						<a href="blog.html">Login</a>
+						<a href="">Diseño de software.</a>
 					</li>
 					<li>
-						<a href="mailto:example@mail.com">yourname(at)companyname.com</a>
+						<a href="">TuringSoft.</a>
 					</li>
 				</ul>
 				<div class="footer-pic">

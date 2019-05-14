@@ -57,17 +57,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<li>
 							<a href="categorias">CATEGORIAS</a>
 						</li>
-						<li >
+						<!--<li >
 							<a href="galeria">GALLERIA</a>
 						</li>
 						<li>
 							<a href="blog">BLOG</a>
-						</li>
+						</li>-->
 						<li class="active">
 							<a href="contacto">CONTACTO</a>
 						</li>
 						<li >
-							<a href="acerca">EQUIPO</a>
+							<a href="acerca">NUESTRO EQUIPO</a>
 						</li>
 						<li>
 							@guest
@@ -113,7 +113,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="section group">
 						<div class="col_1_of_3 contact_1_of_3">
 							<div class="contact-form">
-								<h3>Get In Touch</h3>
+								<h3>Contactanos</h3>
 								<form>
 									<div>
 										<span>
@@ -140,18 +140,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</div>
 						<div class="col_1_of_3 contact_1_of_3">
 							<div class="company_address">
-								<h3>Address</h3>
-								<p>500 Lorem Ipsum Dolor Sit,</p>
-								<p>22-56-2-9 Sit Amet, Lorem,</p>
-								<p>USA</p>
-								<p>Phone:(00) 222 666 444</p>
-								<p>Fax: (000) 000 00 00 0</p>
+								<h3>Direccion.</h3>
+								<p>Univeridad del norte.</p>
+								<p>Barranquilla, Atlántico.</p>
+								<p>Colombia.</p>
+								<p>Telefono:(00) 222 666 444.</p>
+								<p>Fax: (000) 000 00 00 0.</p>
 								<p>Email:
 									<span>
-										<a href="mailto:info@example.com">mail@example.com</a>
+										<a>example@uninorte.edu.co</a>
 									</span>
 								</p>
-								<p>Follow on:
+								<p>Siguenos:
 									<span>Facebook</span>,
 									<span>Twitter</span>
 								</p>
@@ -159,13 +159,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</div>
 						<div class="col_1_of_3 contact_1_of_3">
 							<div class="contact_info">
-								<h3>Find Us Here</h3>
+								<h3>Encuentranos aqui.</h3>
 								<div class="map">
 									<iframe width="100%" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4246.12242861038!2d-74.85363639758782!3d11.01850028350056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42c69cf951223%3A0xb2f7c32f1266fea8!2sUninorte!5e0!3m2!1ses!2sco!4v1554051102216!5m2!1ses!2sco"></iframe>
 									<br>
 									<small>
-										<a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265"
-										    style="color:#F39EFF;;text-align:left;font-size:0.85em">View Larger Map</a>
+										<a href="https://www.google.com/maps/place/Universidad+Del+Norte/@11.0194794,-74.8504209,15z/data=!4m2!3m1!1s0x0:0x5c3de7e774806ad1?sa=X&ved=2ahUKEwjDgYi1rZriAhXxct8KHeyuA2QQ_BIwCnoECA4QCA">View Larger Map</a>
 									</small>
 								</div>
 							</div>
@@ -179,21 +178,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="wrap">
 			<div class="half-footer" style="margin-left:0">
 				<ul class="feeds">
-					<h3>Our Latest feeds</h3>
+					<h3>Funciones.</h3>
 					<li>
-						<a href="index.html">Lorem ipsum dolor consectetur adiping</a>
+						<a href="">Categorias de eventos.</a>
 					</li>
 					<li>
-						<a href="blog.html">Nunc sagittis mollis eros, at venenatis</a>
+						<a href="">Eventos.</a>
 					</li>
 					<li>
-						<a href="blog.html">Morbi nec dolor ipsum vel congugue</a>
+						<a href="">Crear tu evento.</a>
 					</li>
 					<li>
-						<a href="blog.html">Nullam a odio ipsum, at sodales lorem.</a>
+						<a href="">Comparte tu evento.</a>
 					</li>
 					<li>
-						<a href="contact.html">Nullam imperdiet vulputate congugue</a>
+						<a href="">Eventos por ubicacion.</a>
 					</li>
 				</ul>
 				<div class="footer-pic">
@@ -203,21 +202,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 			<div class="half-footer" style="border:none">
 				<ul class="adress">
-					<h3>Catch on</h3>
+					<h3>Informacion.</h3>
 					<li>
-						<a href="index.html">Events Club</a>
+						<a href="">EventsClub.</a>
 					</li>
 					<li>
-						<a href="blog.html">West Coast, CA</a>
+						<a href="">Barranquilla.</a>
 					</li>
 					<li>
-						<a href="blog.html">Facebook - I Music</a>
+						<a href="">Universidad del norte.</a>
 					</li>
 					<li>
-						<a href="blog.html">Login</a>
+						<a href="">Diseño de software.</a>
 					</li>
 					<li>
-						<a href="mailto:example@mail.com">yourname(at)companyname.com</a>
+						<a href="">TuringSoft.</a>
 					</li>
 				</ul>
 				<div class="footer-pic">
