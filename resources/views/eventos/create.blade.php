@@ -47,7 +47,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         border-radius: 3px;
     }
 	.signup-form{
-		width: 700px;
+		width: 500px;
 		margin: 0 auto;
 		padding: 30px 0;
 		margin-top: -30px;
@@ -127,7 +127,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	}
 
 	textarea{
-		width: 640px;
+		width: 440px;
 		height: 150px;
 		margin-left: 10px;
 		margin-top: -20px;
