@@ -83,19 +83,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<a href="blog">BLOG</a>
 						</li>-->
 						<li>
-							<a href="contacto">NUESTRO EQUIPO</a>
+							<a href="contacto">CONTACTO</a>
 						</li>
 						<li>
-							<a href="acerca"> EQUIPO</a>
+							<a href="acerca">NUESTRO EQUIPO</a>
 						</li>
 						<li>
 							@guest
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('LOGIN') }}</a>
+                            <li >
+                                <a href="{{ route('login') }}">{{ __('LOGIN') }}</a>
                             </li>
                             @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('REGISTRO') }}</a>
+                                <li>
+                                    <a href="{{ route('register') }}">{{ __('REGISTRO') }}</a>
                                 </li>
                             @endif
                         @else
