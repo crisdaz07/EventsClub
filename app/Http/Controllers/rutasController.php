@@ -40,17 +40,32 @@ class rutasController extends Controller{
 	}
 
 	public function getRoutes(Request $request){ //TODO borrar esta funcion
-		$fileName = $request->file->getClientOriginalName();
-		$request->file->move('multiple-picker/imgs',$fileName);
+		$files = $request->file('files');
+		foreach ($files as $file) {
+			$fileName = $file->getClientOriginalName();
+			$file->move(public_path('multiple-picker/imgs'),$fileName);
+		}
+		
 
-		$evento = new Evento;
-		$imagen = new Imagen;
-        $imagen->ruta = "multiple-picker/imgs/".$fileName;
-        $imagen->tipo = "e";
-        $imagen->id_tipo = 545;
-        $imagen->save();
 
-		return response()->json(['uploaded'=>'multiple-picker/imgs/'.$fileName]);
+		//$fileName = $request->file->getClientOriginalName();
+		//$request->file->move('multiple-picker/imgs',$fileName);
+
+
+
+
+
+
+
+
+		// $evento = new Evento;
+		// $imagen = new Imagen;
+  //       $imagen->ruta = "multiple-picker/imgs/".$fileName;
+  //       $imagen->tipo = "e";
+  //       $imagen->id_tipo = 545;
+  //       $imagen->save();
+
+		// return response()->json(['uploaded'=>'multiple-picker/imgs/'.$fileName]);
 
 	}
 
