@@ -7,6 +7,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html><head>
 	<title>Events Club a Entertainment Category Website Template | Home :: w3layouts</title>
+
+	<meta name="csrf-token" content="{{ csrf_token() }}">
+
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta charset="utf-8">
@@ -21,11 +24,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
-	{{--File picker links--}}
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.5.2/css/fileinput.css" />
-	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-	
+	{{--File picker--}}
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="File-Upload/css/style.css">
+	<link rel="stylesheet" href="File-Upload/css/jquery.fileupload.css">	
+	{{--##############--}}
+
+
 	<style type="text/css">
 	body{
 
@@ -255,21 +260,36 @@ License URL: http://creativecommons.org/licenses/by/3.0/
        					 </div>										
 					</div>
 				</div>
+				
+				{{--File picker workplace--}}
+
+				<!-- The fileinput-button span is used to style the file input field as button -->
+			    <input type="hidden" name="_token" value="{{csrf_token()}}">
+			    <span class="btn btn-success fileinput-button">
+			        <i class="glyphicon glyphicon-plus"></i>
+			        <span>Select files...</span>
+			        <!-- The file input field used as target for the file upload widget -->
+			        <input id="" type="file" name="files[]" multiple>
+			    </span>
+			    <br>
+			    <br>
+			    <!-- The global progress bar -->
+			    <div id="progress" class="progress">
+			        <div class="progress-bar progress-bar-success"></div>
+			    </div>
+			    <!-- The container for the uploaded files -->
+			    <div id="files" class="files"></div>
+			    <br>
+			    <button class="btn btn-primary" id="fileupload" type="submit" name="files[]" value="Submit">Submit</button>
+			    
+			    {{--#################--}}
+
 				<div class="form-group">
 					<div class="row">
 						<div class="form-group">
              				<textarea name="descripcion" placeholder="Descripcion." required>
 							</textarea>
        					 </div>
-						{{--File picker workplace--}}
-				<div class="container">
-					<div class="col-lg-12 col-sm-12 col-l1 main-section">
-						<input type="hidden" name="_token" value="{{csrf_token()}}">
-					    <div class="form-control">
-						    <input type="file" id="file-1" name="file" multiple="" data-overwrite-initial="false" data-min-file-count="2">
-					    </div>						
-					</div>					
-				</div>
 					</div>
 				</div>
 				<div class="form-group">
@@ -338,35 +358,53 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</div>
 
 
+{{--File picker scripts--}}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
+<script src="File-Upload/js/vendor/jquery.ui.widget.js"></script>
+<script src="File-Upload/js/jquery.iframe-transport.js"></script>
+<script src="File-Upload/js/jquery.fileupload.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+<script>
 
+$(function () {
+    'use strict';
+    var url = "{{ url('/getRoutes')}}";
+    $('#fileupload').fileupload({
+        url: url,
+        dataType: 'json',
+        done: function (e, data) {
+            $.each(data.result.files, function (index, file) {
+                $('<p/>').text(file.name).appendTo('#files');
+            });
+        },
+        add: function (e, data) {  //Esta funcion se puede quitar
+            data.context = $('<button/   class="btn btn-primary">').text('Upload')
+                .appendTo(document.body)
+                .click(function () {
+                    data.context = $('<p/>').text('Uploading...').replaceAll($(this));
+                    data.submit();
+                });
+        },
+        progressall: function (e, data) {
+            var progress = parseInt(data.loaded / data.total * 100, 10);
+            $('#progress .progress-bar').css(
+                'width',
+                progress + '%'
+            );
+        }
+    }).prop('disabled', !$.support.fileInput)
+        .parent().addClass($.support.fileInput ? undefined : 'disabled');
+});
+$.ajaxSetup({
+  headers: {
+    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+  }
+});
 
+</script>
 
-	{{--File picker scripts--}}
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.5.2/js/fileinput.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/themes/fa/theme.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-	<script type="text/javascript">
-	 $('#file-1').fileinput({
-	  theme:'fa',
-	  uploadUrl:"{{url('getRoutes')}}",
-	  uploadExtraData:function(){
-	   return{
-	    _token:$("input[name='_token']").val()
-	   };
-	  },
-	  allowedFileExtensions:['jpg','png','gif'],
-	  overwriteInitial:false,
-	  maxFileSize:2000,
-	  maxFileNum:8,
-	  slugCallback:function(filename){
-	   return filename.replace('(','_').replace(']','_');
-	  }
-	 });
-	</script>
+{{--#################--}}
 
 
 
