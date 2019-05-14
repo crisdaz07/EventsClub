@@ -29,7 +29,10 @@ class rutasController extends Controller{
 		$categorias = Categoria::all();  //todos los eventos para mostrar unos cuantos
 		$categorias1 = $categorias->splice(0,3);
 
-		return view('welcome', compact('categorias','categorias1'));
+		$imagenes = Imagen::getImagenForAll("c"); //Primera imagen de todos los eventos
+        $imagenes1 = $imagenes->splice(0,3);
+
+		return view('welcome', compact('categorias','categorias1','imagenes','imagenes1'));
 		
 	}
 
