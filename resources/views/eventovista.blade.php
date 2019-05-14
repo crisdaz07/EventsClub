@@ -35,14 +35,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<style >
 		.header a1{
 			color: #610B4B;
+			font-family: 'caviar_dreamsregular';
 		}
 		.grid_1_of_3 h4{
 			color: #ffffff;
 			font-weight: bold;
+			font-family: 'caviar_dreamsregular';
 		}
 		.content_top h3{
 			color: #ffffff;
 			font-size: 100px;
+			font-family: 'caviar_dreamsregular';
 			
 		}
 	
@@ -89,21 +92,25 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			font-weight: bold;
 			font-size: 25px;
 			margin-top: 30px;
+			font-family: 'caviar_dreamsregular';
 		}
 		.container h3{
 			font-weight: bold;
 			font-size: 30px;
 			color: #929292;
+			font-family: 'caviar_dreamsregular';
 		}
 		.container h4{
 			font-weight: bold;
 			font-size: 30px;
 			color: #E60085;
+			font-family: 'caviar_dreamsregular';
 		}
 		.container h1{
 			margin-left: 100px;
 			margin-top: 5px;
 			color: #929292;
+			font-family: 'caviar_dreamsregular';
 	</style>
 </head>
 
@@ -119,7 +126,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="menu">
 					<ul>
 						<li>
-							<a href="../welcome">INICIO</a>
+							@if (session('status'))
+								<a href="../welcome">INICIO</a>
+							@else
+								<a href="../home">INICIO</a>
+							@endif
 						</li>
 						<li class="active">
 							<a href="../categorias">CATEGORIAS</a>

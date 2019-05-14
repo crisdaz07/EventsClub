@@ -35,14 +35,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<style >
 		.header a1{
 			color: #610B4B;
+			font-family: 'caviar_dreamsregular';
 		}
 		.grid_1_of_3 h4{
 			color: #ffffff;
 			font-weight: bold;
+			font-family: 'caviar_dreamsregular';
 		}
 		.content_top h3{
 			color: #ffffff;
 			font-size: 100px;
+			font-family: 'caviar_dreamsregular';
 		}
 		.event-time a{
 			color: #dc00ff;
@@ -64,7 +67,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="menu">
 					<ul>
 						<li>
-							<a href="../welcome">INICIO</a>
+							@if (session('status'))
+								<a href="../welcome">INICIO</a>
+							@else
+								<a href="../home">INICIO</a>
+							@endif
 						</li>
 						<li class="active">
 							<a href="../categorias">CATEGORIAS</a>
@@ -138,7 +145,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									<div class="event-img">
 										<a href="blog.html">
 											<img src="../images/Inicio/Rumba2.png" alt="">
-											<span>Leer Más</span>
 										</a>
 										<h4>{{ $e->descripcion }} </h4>
 								    </div>

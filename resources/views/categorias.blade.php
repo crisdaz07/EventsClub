@@ -45,6 +45,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		.header a1{
 			color: #610B4B;
 		}
+		.event-time h4{
+			color: #EF008A;
+			font-weight: bold;
+		}
 	
 	</style>
 	
@@ -63,7 +67,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="menu">
 					<ul>
 						<li>
-							<a href="welcome">INICIO</a>
+							@if (session('status'))
+								<a href="welcome">INICIO</a>
+							@else
+								<a href="home">INICIO</a>
+							@endif
 						</li>
 						<li class="active">
 							<a href="categorias">CATEGORIAS</a>
@@ -148,15 +156,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							@if( $c->id ==  $e->id_categoria )
 						 		<div class="grid_1_of_3 events_1_of_3">
 									<div class="event-time">
-										<h4>
-											<span> {{ $e->nombre }}</span>
-										</h4>
+										<a href="../evento/{{ $e->id }}">
+											<h4> {{ $e->nombre }}</h4>
+										</a>
 										<h4>{{ $e->fecha_inicio }}</h4>
 									</div>
 									<div class="event-img">
 										<a href="blog.html">
 											<img src="images/Inicio/Rumba2.png" alt="">
-											<span>Leer Más</span>
 										</a>
 								    </div>
 								</div>

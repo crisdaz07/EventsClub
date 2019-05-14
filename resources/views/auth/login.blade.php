@@ -52,6 +52,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		width: 340px;
     	margin: 50px auto;
 		margin-top: 0px;
+		
 	}
 	body{
 		
@@ -65,12 +66,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     .login-form h2 {
         margin: 0 0 15px;
 		color: #610B4B;
+		font-family: 'caviar_dreamsregular';
     }
 	.login-form a {
 		color: #610B4B;	
+		font-family: 'caviar_dreamsregular';
 	}
 	.login-form a1 {
 		color: #ffffff;	
+		font-family: 'caviar_dreamsregular';
 	}
     .form-control, .btn {
         min-height: 38px;
@@ -82,6 +86,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         font-weight: bold;
 		background: #610B4B;
 		color: #ffffff;
+		font-family: 'caviar_dreamsregular';
     }
 	.btn1 {
 		color: #000000;

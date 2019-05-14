@@ -44,6 +44,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	}
 	.container h2{
 		color: white;
+		font-family: 'caviar_dreamsregular';
 	}
 	
 	
@@ -80,7 +81,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<div class="top-right links">
 									@auth
 									<li>
-										<a href="{{ url('/home') }}">Home</a>
+										<script> 
+											window.location.replace('home'); 
+
+										</script>
 									</li>
 									@else
 									<li>
@@ -131,7 +135,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			  <div class="col-sm">
 				  @foreach($categorias1 as $ca)
 						<div class="grid_1_of_3 events_1_of_3">
-							<h2>{{ $ca->nombre }}</h2>
+							<a href="/categoria/{{ $ca->nombre }}" >
+								<h2 style="font-size: 40px" >{{ $ca->nombre }}</h2>
+							</a>
 							<div class="event-img">
 								<a href="">
 									<img src="../images/Inicio/Rumba2.png" alt="">
@@ -149,7 +155,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="col-sm">
 						@foreach ($chunk as $c)
 						<div class="grid_1_of_3 events_1_of_3">
-							<h2>{{ $c->nombre }}</h2>
+							<a href="/categoria/{{ $c->nombre }}" >
+								<h2 style="font-size: 40px" >{{ $c->nombre }}</h2>
+							</a>
 							<div class="event-img">
 								<a href="">
 									<img src="../images/Inicio/Rumba2.png" alt="">

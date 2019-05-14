@@ -72,6 +72,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         margin: 0 0 15px;
 		position: relative;
 		text-align: center;
+		font-family: 'caviar_dreamsregular';
     }
 	.signup-form h2:before, .signup-form h2:after{
 		content: "";
@@ -81,12 +82,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		position: absolute;
 		top: 50%;
 		z-index: 2;
+		font-family: 'caviar_dreamsregular';
 	}
 	.signup-form h2:before{
 		left: 0;
+		font-family: 'caviar_dreamsregular';
 	}
 	.signup-form h2:after{
 		right: 0;
+		font-family: 'caviar_dreamsregular';
 	}
     .signup-form .hint-text{
 		color: #610B4B;
@@ -123,20 +127,25 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     .signup-form a{
 		color: #FFFFFF;
 		text-decoration: underline;
+		font-family: 'caviar_dreamsregular';
 	}
     .signup-form a:hover{
 		text-decoration: none;
+		font-family: 'caviar_dreamsregular';
 	}
 	.signup-form form a{
 		text-decoration: none;
+		font-family: 'caviar_dreamsregular';
 	}
 	.signup-form form a:hover{
 		text-decoration: underline;
+		font-family: 'caviar_dreamsregular';
 	}
 
 	textarea{
 		width: 340px;
 		height: 300px;
+		font-family: 'caviar_dreamsregular';
 	}
 
 	SELECT{
@@ -158,7 +167,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="menu">
 					<ul>
 						<li>
-							<a href="../welome">INICIO</a>
+							@if (session('status'))
+								<a href="../welcome">INICIO</a>
+							@else
+								<a href="../home">INICIO</a>
+							@endif
 						</li>
 						<li>
 							<a href="../categorias">CATEGORIAS</a>
