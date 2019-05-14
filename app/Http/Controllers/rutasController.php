@@ -46,6 +46,20 @@ class rutasController extends Controller{
 			$file->move(public_path('multiple-picker/imgs'),$fileName);
 		}
 		
+		$evento = new Evento;
+        $evento->id_usuario = 44; //TODO obtener id del usuario real
+        $evento->id_categoria = 34;
+        $evento->nombre = $request->nombre;
+        $evento->descripcion = $request->descripcion;
+        $evento->ubicacion = $request->ubicacion;
+        $evento->fecha_inicio = $request->fecha_inicio;
+        $evento->fecha_fin = $request->fecha_fin;
+        $evento->hora_inicio = $request->hora_inicio;
+        $evento->hora_fin = $request->hora_fin;
+
+        $evento->save();
+
+
 
 
 		//$fileName = $request->file->getClientOriginalName();

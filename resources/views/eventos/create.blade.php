@@ -253,7 +253,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			    <!-- The container for the uploaded files -->
 			    <div id="files" class="files"></div>
 			    <br>
-			    <button class="btn btn-primary" id="fileupload" type="submit" name="files[]" value="Submit">Submit</button>
 			    
 			    {{--#################--}}
 
@@ -266,7 +265,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 				</div>
 				<div class="form-group">
-					<button type="submit" class="btn btn-success btn-lg btn-block">Crear</button>
+					<button id="fileupload" type="submit" name="files[]"  class="btn btn-success btn-lg btn-block">Crear</button>
 				</div>
 			</form>
 		</div>
