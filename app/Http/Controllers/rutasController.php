@@ -7,7 +7,7 @@ use App\Evento;
 use App\Categoria;
 use App\Imagen;
 use Illuminate\Support\Facades\Input;
-
+use DB;
 class rutasController extends Controller{
 	
 
@@ -26,13 +26,20 @@ class rutasController extends Controller{
 	
 	public function index(){
 
-		$categorias = Categoria::all();  //todos los eventos para mostrar unos cuantos
+		//$categorias = Categoria::all();  //todos los eventos para mostrar unos cuantos
+		//$categorias1 = $categorias->splice(0,3);
+
+		//$imagenes = Imagen::getImagenForAll("c"); //Primera imagen de todos los eventos
+        //$imagenes1 = $imagenes->splice(0,3);
+
+		$categorias =	DB::table('imagenes')->join('categorias', 'imagenes.id_tipo','=','categorias.id')->select('categorias.nombre','categorias.descripcion','ruta','id_tipo')
+											->where('tipo','=','c')
+											->groupBy('id_tipo')
+											->get();
 		$categorias1 = $categorias->splice(0,3);
-
-		$imagenes = Imagen::getImagenForAll("c"); //Primera imagen de todos los eventos
-        $imagenes1 = $imagenes->splice(0,3);
-
-		return view('welcome', compact('categorias','categorias1','imagenes','imagenes1'));
+		
+		
+		return view('welcome', compact('categorias','categorias1'));
 		
 	}
 
@@ -90,14 +97,25 @@ class rutasController extends Controller{
 	
 	public function categorias(){
 		
-		$eventos = Evento::all();
 		
-		$categorias = Categoria::all();  //todos las cateogiras para events
+		
+	  	//todos las cateogiras para events
 
 		//$imagenes = Imagen::getImagenForAll("e"); //Primera imagen de todos los eventos
 		
-				
+		
+		$eventos =	DB::table('imagenes')->join('eventos', 'imagenes.id_tipo','=','eventos.id')->select('eventos.nombre','eventos.descripcion','ruta','id_tipo','eventos.id_categoria','eventos.id','eventos.fecha_inicio','eventos.fecha_fin','eventos.hora_inicio', 'eventos.hora_fin')
+											->where('tipo','=','e')
+											->groupBy('id_tipo')
+											->get();
+		$categorias = DB::table('categorias')->join('eventos','eventos.id_categoria', '=', 'categorias.id')->select('categorias.*')->distinct()->get();
+		
+		
+		
 		return view('categorias', compact('categorias','eventos'));
+		
+		
+		
 		
 	}
 	
@@ -107,7 +125,7 @@ class rutasController extends Controller{
 		
 	}
 	
-	public function galeria(){
+	public function galeria(){	
 		
 		return view('gallery');
 		

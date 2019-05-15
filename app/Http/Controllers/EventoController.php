@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Evento;
 use App\Categoria;
 use App\Imagen;
+use DB;
 
 class EventoController extends Controller
 {
@@ -41,7 +42,7 @@ class EventoController extends Controller
     public function store(Request $request)
     {
         $evento = new Evento;
-        $evento->id_usuario = 44; //TODO obtener id del usuario real
+        $evento->id_usuario = $request->usuario; //TODO obtener id del usuario real
         $evento->id_categoria = Categoria::getCategoria($request->categoria);
         $evento->nombre = $request->nombre;
         $evento->descripcion = $request->descripcion;
@@ -79,7 +80,10 @@ class EventoController extends Controller
     public function show($id)
     {
         $evento = Evento::find($id);
-        return view('eventovista', compact('evento'));
+		$imagenes = DB::table('imagenes')->select('ruta')->where('tipo', '=', 'e')->where('id_tipo', '=', $id)->get();
+		
+        return view('eventovista', compact('evento', 'imagenes'));
+		
     }
 
     /**

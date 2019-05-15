@@ -189,18 +189,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="col-lg-6">
 				<div class="slider" >
 					<ul>
-						<li>
-							<img src="../images/matchball.jpg" alt="">
-						</li>
-						<li>
-							 <img src="../images/matchball.jpg" alt="">
-						</li>
-						<li>
-							<img src="../images/matchball.jpg" alt="">
-						</li>
-						<li>
-							<img src="../images/matchball.jpg" alt="">
-						</li>
+						@foreach ($imagenes as $i)
+							<li>
+								<img src="../{{$i->ruta}}" alt="">	
+							</li>
+						@endforeach
 					</ul>
 				</div>
 			</div>

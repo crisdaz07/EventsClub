@@ -94,8 +94,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<li>
 							<a href="acerca">NUESTRO EQUIPO</a>
 						</li>
+						@guest
+						$admin = 'admin';
+						@if ( Auth::user()->name == '$admin')
 						<li>
-							@guest
+							<a href="acerca">CREAR CATEGORIA</a>
+						</li>
+						@else
+						@endif
+						<li>
                             <li >
                                 <a href="{{ route('login') }}">{{ __('LOGIN') }}</a>
                             </li>
@@ -210,7 +217,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		
 		<!------End Slider ------------>
 	</div>
-	<div class="main">
+	<!--<div class="main">
 		<div class="wrap">
 			<div class="section group">
 				<div class="listview_1_of_3 images_1_of_3 event_grid">
@@ -304,13 +311,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<a href="gallery.html">
 							<img src="images/videos.jpg" alt="" />
 						</a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna-->aliqua. </p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 						<a href="gallery.html" class="button">Ver Todos</a>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>-->
 	<div class="footer">
 		<div class="wrap">
 			<div class="half-footer" style="margin-left:0">

@@ -224,6 +224,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<form action="/evento" method="post" enctype="multipart/form-data">
 				<input name="_token" type="hidden" value="{{ csrf_token() }}"/>
 				<input name="_method" type="hidden" value="{{ 'post' }}"/>
+				<input name="usuario" type="hidden" value="{{Auth::user()->id}}"/>
+			   
 				{{ csrf_field() }}
 				<h2>Evento</h2>
 				<p class="hint-text">Crea tu evento.</p>

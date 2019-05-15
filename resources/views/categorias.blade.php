@@ -163,7 +163,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									</div>
 									<div class="event-img">
 										<a href="blog.html">
-											<img src="images/Inicio/Rumba2.png" alt="">
+											<img src="../{{$e->ruta}}" alt="">
 										</a>
 								    </div>
 								</div>
