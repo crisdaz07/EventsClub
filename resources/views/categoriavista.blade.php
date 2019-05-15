@@ -179,7 +179,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</li>
 				</ul>
 				<div class="footer-pic">
-					<img src="images/f-icon.png" alt="">
+					<img src="../images/f-icon.png" alt="">
 				</div>
 				<div class="clear"></div>
 			</div>
@@ -203,7 +203,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</li>
 				</ul>
 				<div class="footer-pic">
-					<img src="images/foot-icon.png" alt="">
+					<img src="../images/foot-icon.png" alt="">
 				</div>
 			</div>
 			<div class="clear"></div>

@@ -49,6 +49,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			color: #EF008A;
 			font-weight: bold;
 		}
+		.botones{
+			margin-bottom: 40px;
+		}
 	
 	</style>
 	
@@ -145,6 +148,30 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 		</div>
 	</div>
+	
+	@guest
+	
+	@else
+		@if(Auth::user()->id == $id)
+			<div class="botones">
+				<span>
+					<a href="categoria/create" >
+						<input type="submit" class="mybutton" value="crear cataegoria" style="margin-right: 200px">
+					</a>
+				</span>
+			</div>
+		@endif
+		<div>
+			<span class="botones">
+				<a href="evento/create" >
+					<input type="submit" class="mybutton" value="Crear evento" style="margin-right: 200px">
+				</a>
+			</span>
+		</div>
+	
+	@endguest
+	
+	
 	<div class="main">
 		<div class="wrap">
 			<div class="content_top">

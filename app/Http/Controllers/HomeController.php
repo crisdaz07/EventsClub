@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Categoria;
 use App\Imagen;
+use DB;
 class HomeController extends Controller
 {
     /**
@@ -26,13 +27,15 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $categorias = Categoria::all(); 
-        $categorias1 = $categorias->splice(0,3);
+        $categorias =	DB::table('imagenes')->join('categorias', 'imagenes.id_tipo','=','categorias.id')->select('categorias.nombre','categorias.descripcion','ruta','id_tipo')
+											->where('tipo','=','c')
+											->groupBy('id_tipo')
+											->get();
+		$categorias1 = $categorias->splice(0,3);
+		
+		
+		return view('home', compact('categorias','categorias1'));
         
-        $imagenes = Imagen::getImagenForAll("c"); //Primera imagen de todos los eventos
-        $imagenes1 = $imagenes->splice(0,3);
-
-        return view('home', compact('categorias','categorias1','imagenes','imagenes1'));
     }
 	
 	

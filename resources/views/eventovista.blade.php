@@ -214,7 +214,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<h1>{{$evento->hora_inicio}}.</h1>
 					</li>
 					<li>
-						<a>FECHA DE INICIO:</a>
+						<a>FECHA DE FIN:</a>
 						<h1>{{$evento->fecha_fin}}.</h1>
 						<h1>{{$evento->hora_fin}}.</h1>
 					</li>
@@ -244,7 +244,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</li>
 				</ul>
 				<div class="footer-pic">
-					<img src="images/f-icon.png" alt="">
+					<img src="../images/f-icon.png" alt="">
 				</div>
 				<div class="clear"></div>
 			</div>
@@ -268,7 +268,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</li>
 				</ul>
 				<div class="footer-pic">
-					<img src="images/foot-icon.png" alt="">
+					<img src="../images/foot-icon.png" alt="">
 				</div>
 			</div>
 			<div class="clear"></div>

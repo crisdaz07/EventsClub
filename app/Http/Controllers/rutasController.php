@@ -110,9 +110,9 @@ class rutasController extends Controller{
 											->get();
 		$categorias = DB::table('categorias')->join('eventos','eventos.id_categoria', '=', 'categorias.id')->select('categorias.*')->distinct()->get();
 		
+		$id = 111;
 		
-		
-		return view('categorias', compact('categorias','eventos'));
+		return view('categorias', compact('categorias','eventos','id'));
 		
 		
 		

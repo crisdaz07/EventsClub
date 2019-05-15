@@ -141,7 +141,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>-->
 					<div class="col_1_of_3 span_1_of_3" style="margin-left: 300px ">
 						<h2>
-							<span>Numestro equipo.</span>
+							<span>Nuestro equipo.</span>
 						</h2>
 						<div class="event-grid">
 							<div class="event_img">
