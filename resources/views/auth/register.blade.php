@@ -54,7 +54,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     .form-control{
 		height: 40px;
 		box-shadow: none;
-		color: #FFFF00;
 	}
 	.form-control:focus{
 		border-color: #5cb85c;
